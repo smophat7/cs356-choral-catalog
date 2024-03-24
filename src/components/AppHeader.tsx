@@ -18,7 +18,7 @@ const AppHeader: React.FC = () => {
   return (
     <AppShell.Header>
       <Group h="100%" gap="sm" px="md">
-        <Title order={1}>Choral Sheet Music</Title>
+        <Title order={2}>Choral Sheet Music</Title>
         <Button {...getButtonProps(RouteEndpoints.Catalog)}>Catalog</Button>
         <Button {...getButtonProps(RouteEndpoints.MyLibrary)}>
           My Library

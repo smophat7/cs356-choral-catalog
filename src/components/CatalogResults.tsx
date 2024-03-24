@@ -10,7 +10,7 @@ interface Props {
 
 const CatalogResults: React.FC<Props> = ({ songs }) => {
   return (
-    <ScrollArea>
+    <ScrollArea flex={1}>
       {songs.map((song) => (
         <div key={song.id}>
           <h2>{song.title}</h2>

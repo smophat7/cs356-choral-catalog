@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
 
 import {
-  Box,
   Button,
-  Chip,
+  Card,
   CloseButton,
-  CloseIcon,
   ComboboxData,
   ComboboxItem,
+  Grid,
   Group,
   Modal,
   MultiSelect,
+  Pill,
   Select,
   Stack,
   TextInput,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconFilter, IconSearch } from "@tabler/icons-react";
+import { IconFilter, IconSearch, IconX } from "@tabler/icons-react";
 
 import { MusicalPeriod, Song } from "../types";
 import Filter from "./Filter";
@@ -104,63 +104,70 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
       label: composer,
     }));
 
+  const filterPill = (value: string | string[], onRemove: () => void) => (
+    <Pill onRemove={onRemove} withRemoveButton size="lg">
+      {Array.isArray(value) ? value.join(", ") : value}
+    </Pill>
+  );
+
+  const numFiltersApplied =
+    (languageFilter ? 1 : 0) +
+    (musicalPeriodFilter.length > 0 ? 1 : 0) +
+    (composerFilter ? 1 : 0);
+
   return (
-    <Box flex={1}>
-      <Stack w="100%" bg="var(--mantine-color-body)">
-        <Filter title="Search">
-          <TextInput
-            leftSectionPointerEvents="none"
-            leftSection={<IconSearch />}
-            rightSection={
-              <CloseButton
-                onClick={() => {
-                  setSearchTextFilter("");
-                }}
+    <Card shadow="sm" withBorder>
+      <Stack>
+        <Grid align="center">
+          <Grid.Col span={8}>
+            <Filter>
+              <TextInput
+                leftSectionPointerEvents="none"
+                leftSection={<IconSearch />}
+                rightSection={
+                  <CloseButton
+                    onClick={() => {
+                      setSearchTextFilter("");
+                    }}
+                  />
+                }
+                placeholder="Search anything"
+                value={searchTextFilter}
+                onChange={(event) =>
+                  setSearchTextFilter(event.currentTarget.value)
+                }
               />
-            }
-            placeholder="Search anything"
-            value={searchTextFilter}
-            onChange={(event) => setSearchTextFilter(event.currentTarget.value)}
-          />
-        </Filter>
-        <Group pb="sm">
-          {languageFilter && (
-            <Chip
-              icon={<CloseIcon />}
-              variant="filled"
-              color="grey"
-              onClick={() => setLanguageFilter(null)}
-              defaultChecked
-            >
-              {languageFilter}
-            </Chip>
-          )}
-          {musicalPeriodFilter.length > 0 && (
-            <Chip
-              icon={<CloseIcon />}
-              variant="filled"
-              color="grey"
-              onClick={() => setMusicalPeriodFilter([])}
-              defaultChecked
-            >
-              {musicalPeriodFilter.join(", ")}
-            </Chip>
-          )}
-          {composerFilter && (
-            <Chip
-              icon={<CloseIcon />}
-              variant="filled"
-              color="grey"
-              onClick={() => setComposerFilter(null)}
-              defaultChecked
-            >
-              {composerFilter}
-            </Chip>
-          )}
-        </Group>
-        <Button onClick={open} leftSection={<IconFilter />} fullWidth>
-          All Filters
-        </Button>
+            </Filter>
+          </Grid.Col>
+          <Grid.Col span={4}>
+            <Button onClick={open} leftSection={<IconFilter />} fullWidth>
+              All Filters
+            </Button>
+          </Grid.Col>
+        </Grid>
+        {numFiltersApplied > 0 && (
+          <Group>
+            {languageFilter &&
+              filterPill(languageFilter, () => setLanguageFilter(null))}
+            {musicalPeriodFilter.length > 0 &&
+              filterPill(musicalPeriodFilter, () => setMusicalPeriodFilter([]))}
+            {composerFilter &&
+              filterPill(composerFilter, () => setComposerFilter(null))}
+            {numFiltersApplied > 1 && (
+              <Button
+                leftSection={<IconX />}
+                onClick={() => {
+                  setLanguageFilter(null);
+                  setMusicalPeriodFilter([]);
+                  setComposerFilter(null);
+                }}
+                variant="outline"
+              >
+                Clear all
+              </Button>
+            )}
+          </Group>
+        )}
       </Stack>
       <Modal title="All Filters" opened={opened} onClose={close} centered>
         <Stack>
@@ -199,7 +206,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
           </Filter>
         </Stack>
       </Modal>
-    </Box>
+    </Card>
   );
 };
 
