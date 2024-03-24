@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Text, Title } from "@mantine/core";
+import { Box, Text } from "@mantine/core";
 
 interface Props {
   title: string;
@@ -10,7 +10,7 @@ interface Props {
 
 const Filter: React.FC<Props> = ({ title, subtitle, children }) => (
   <Box>
-    <Title order={4}>{title}</Title>
+    <Text>{title}</Text>
     <Text size="sm" mb={5}>
       {subtitle}
     </Text>

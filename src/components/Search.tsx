@@ -1,6 +1,19 @@
 import React, { useEffect, useState } from "react";
 
-import { ComboboxData, ComboboxItem, MultiSelect, Select } from "@mantine/core";
+import {
+  Box,
+  Button,
+  Chip,
+  CloseIcon,
+  ComboboxData,
+  ComboboxItem,
+  Group,
+  Modal,
+  MultiSelect,
+  Select,
+  Stack,
+} from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 
 import { MusicalPeriod, Song } from "../types";
 import Filter from "./Filter";
@@ -16,6 +29,8 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     MusicalPeriod[]
   >([]);
   const [composerFilter, setComposerFilter] = useState<string | null>(null);
+
+  const [opened, { open, close }] = useDisclosure(false);
 
   // Apply filters
   useEffect(() => {
@@ -65,39 +80,81 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
 
   return (
     <>
-      <Filter title="Musical Period">
-        <MultiSelect
-          placeholder="Select period(s)..."
-          data={musicalPeriodData}
-          value={musicalPeriodFilter}
-          onChange={(values) =>
-            setMusicalPeriodFilter(values as MusicalPeriod[])
-          }
-          clearable
-          hidePickedOptions
-          searchable
-        />
-      </Filter>
-      <Filter title="Language">
-        <Select
-          placeholder="Select language..."
-          data={languageData}
-          value={languageFilter}
-          onChange={(value) => setLanguageFilter(value)}
-          clearable
-          searchable
-        />
-      </Filter>
-      <Filter title="Composer">
-        <Select
-          placeholder="Select composer..."
-          data={composerData}
-          value={composerFilter}
-          onChange={(value) => setComposerFilter(value)}
-          clearable
-          searchable
-        />
-      </Filter>
+      <Box>
+        <Group pb="sm">
+          {languageFilter && (
+            <Chip
+              icon={<CloseIcon />}
+              variant="filled"
+              color="grey"
+              onClick={() => setLanguageFilter(null)}
+              defaultChecked
+            >
+              {languageFilter}
+            </Chip>
+          )}
+          {musicalPeriodFilter.length > 0 && (
+            <Chip
+              icon={<CloseIcon />}
+              variant="filled"
+              color="grey"
+              onClick={() => setMusicalPeriodFilter([])}
+              defaultChecked
+            >
+              {musicalPeriodFilter.join(", ")}
+            </Chip>
+          )}
+          {composerFilter && (
+            <Chip
+              icon={<CloseIcon />}
+              variant="filled"
+              color="grey"
+              onClick={() => setComposerFilter(null)}
+              defaultChecked
+            >
+              {composerFilter}
+            </Chip>
+          )}
+        </Group>
+        <Button onClick={open}>All Filters</Button>
+      </Box>
+      <Modal title="All Filters" opened={opened} onClose={close} centered>
+        <Stack>
+          <Filter title="Musical Period">
+            <MultiSelect
+              placeholder="Select period(s)..."
+              data={musicalPeriodData}
+              value={musicalPeriodFilter}
+              onChange={(values) =>
+                setMusicalPeriodFilter(values as MusicalPeriod[])
+              }
+              clearable
+              hidePickedOptions
+              searchable
+            />
+          </Filter>
+          <Filter title="Language">
+            <Select
+              placeholder="Select language..."
+              data={languageData}
+              value={languageFilter}
+              onChange={(value) => setLanguageFilter(value)}
+              clearable
+              searchable
+            />
+          </Filter>
+          <Filter title="Composer">
+            <Select
+              placeholder="Select composer..."
+              data={composerData}
+              value={composerFilter}
+              onChange={(value) => setComposerFilter(value)}
+              clearable
+              searchable
+            />
+          </Filter>
+        </Stack>
+      </Modal>
     </>
   );
 };
