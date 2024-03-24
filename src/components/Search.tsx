@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
 
 import {
-  Box,
   Button,
   Chip,
+  CloseButton,
   CloseIcon,
   ComboboxData,
   ComboboxItem,
-  Container,
   Group,
   Modal,
   MultiSelect,
   Select,
   Stack,
+  TextInput,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconFilter } from "@tabler/icons-react";
+import { IconFilter, IconSearch } from "@tabler/icons-react";
 
 import { APP_HEADER_HEIGHT } from "../constants";
 import { MusicalPeriod, Song } from "../types";
@@ -27,6 +27,10 @@ interface Props {
 }
 
 const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
+  const [searchTextFilteredSongs, setSearchTextFilteredSongs] = useState<
+    Song[] | null
+  >(null);
+  const [searchTextFilter, setSearchTextFilter] = useState<string>("");
   const [languageFilter, setLanguageFilter] = useState<string | null>(null);
   const [musicalPeriodFilter, setMusicalPeriodFilter] = useState<
     MusicalPeriod[]
@@ -35,9 +39,10 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
 
   const [opened, { open, close }] = useDisclosure(false);
 
-  // Apply filters
+  // Apply filters (except search text)
   useEffect(() => {
-    const filteredSongs = allSongs.filter(
+    const songsToFilterFrom = searchTextFilteredSongs || allSongs;
+    const filteredSongs = songsToFilterFrom.filter(
       (song) =>
         (languageFilter === null || song.language === languageFilter) &&
         (musicalPeriodFilter.length == 0 ||
@@ -48,10 +53,28 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   }, [
     allSongs,
     onFilterChange,
+    searchTextFilteredSongs,
     languageFilter,
     musicalPeriodFilter,
     composerFilter,
   ]);
+
+  // Apply search text filter
+  useEffect(() => {
+    const filteredSongs = allSongs.filter(
+      (song) =>
+        song.title.toLowerCase().includes(searchTextFilter.toLowerCase()) ||
+        song.composer.toLowerCase().includes(searchTextFilter.toLowerCase()) ||
+        song.description
+          .toLowerCase()
+          .includes(searchTextFilter.toLowerCase()) ||
+        song.language.toLowerCase().includes(searchTextFilter.toLowerCase()) ||
+        song.musicalPeriod
+          .toLowerCase()
+          .includes(searchTextFilter.toLowerCase())
+    );
+    setSearchTextFilteredSongs(filteredSongs);
+  }, [allSongs, searchTextFilter]);
 
   const musicalPeriodData: ComboboxData = Object.values(MusicalPeriod).map(
     (musicalPeriod) => ({
@@ -90,9 +113,22 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
         p="sm"
         bg="var(--mantine-color-body)"
       >
-        <Button onClick={open} leftSection={<IconFilter />} fullWidth>
-          All Filters
-        </Button>
+        <Filter title="Search">
+          <TextInput
+            leftSectionPointerEvents="none"
+            leftSection={<IconSearch />}
+            rightSection={
+              <CloseButton
+                onClick={() => {
+                  setSearchTextFilter("");
+                }}
+              />
+            }
+            placeholder="Search anything"
+            value={searchTextFilter}
+            onChange={(event) => setSearchTextFilter(event.currentTarget.value)}
+          />
+        </Filter>
         <Group pb="sm">
           {languageFilter && (
             <Chip
@@ -128,6 +164,9 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
             </Chip>
           )}
         </Group>
+        <Button onClick={open} leftSection={<IconFilter />} fullWidth>
+          All Filters
+        </Button>
       </Stack>
       <Modal title="All Filters" opened={opened} onClose={close} centered>
         <Stack>
