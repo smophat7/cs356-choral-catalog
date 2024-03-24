@@ -12,7 +12,7 @@ const AppHeader: React.FC = () => {
     onClick: () => {
       navigate(route);
     },
-    variant: location.pathname === route ? "filled" : "outline",
+    variant: location.pathname === route ? "filled" : "subtle",
   });
 
   return (

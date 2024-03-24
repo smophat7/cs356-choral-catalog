@@ -10,6 +10,7 @@ export interface Song {
   voicings: Voicing[];
   mode: Mode;
   coverImageUrl: string;
+  durationSeconds: number;
   // ageLevel: string;
   // gradeDifficulty: string;
   // topicSubject: string;

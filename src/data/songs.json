@@ -51,6 +51,7 @@
       "tonic": "A",
       "mode": "Ionian"
     },
+    "durationSeconds": 480,
     "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
   },
   {
@@ -105,6 +106,7 @@
       "tonic": "D",
       "mode": "Dorian"
     },
+    "durationSeconds": 300,
     "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
   },
   {
@@ -113,7 +115,7 @@
     "composer": "Leonard Cohen",
     "description": "Hallelujah by Leonard Cohen is a popular choral arrangement sung in English. Despite originating in the Twentieth or Twenty-First Century, its timeless melody and poignant lyrics have made it a classic across generations. The piece exudes a sense of joy and celebration, with its triumphant chorus inviting listeners to join in praise and gratitude.",
     "language": "English",
-    "musicalPeriod": "TwentiethOrTwentyFirstCentury",
+    "musicalPeriod": "20th/21st Century",
     "voicings": [
       {
         "voices": [
@@ -159,6 +161,7 @@
       "tonic": "C",
       "mode": "Mixolydian"
     },
+    "durationSeconds": 360,
     "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
   },
   {
@@ -213,7 +216,8 @@
       "tonic": "D",
       "mode": "Lydian"
     },
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11539410.jpg"
+    "durationSeconds": 200,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
   },
   {
     "id": "ca617c82-98a0-46b3-bd35-6843a725f34f",
@@ -267,7 +271,8 @@
       "tonic": "C",
       "mode": "Ionian"
     },
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11539410.jpg"
+    "durationSeconds": 180,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
   },
   {
     "id": "0f445535-075b-4d7f-8d02-605e81c0e8d7",
@@ -275,7 +280,7 @@
     "composer": "Maurice Duruflé",
     "description": "Duruflé Requiem is a setting of the Requiem Mass by Maurice Duruflé, sung in Latin. Composed in the Twentieth or Twenty-First Century, this masterpiece combines traditional Gregorian chant with lush harmonies and expressive melodies. Reflecting on themes of life, death, and eternal rest, the Duruflé Requiem offers solace and contemplation to both performers and listeners alike.",
     "language": "Latin",
-    "musicalPeriod": "TwentiethOrTwentyFirstCentury",
+    "musicalPeriod": "20th/21st Century",
     "voicings": [
       {
         "voices": [
@@ -321,7 +326,8 @@
       "tonic": "D",
       "mode": "Mixolydian"
     },
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11539410.jpg"
+    "durationSeconds": 240,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
   },
   {
     "id": "d4866f01-28c2-41e1-b0cd-6798c2d8c0c6",
@@ -329,7 +335,7 @@
     "composer": "Maurice Duruflé",
     "description": "Ubi Caritas is a choral motet by Maurice Duruflé, sung in Latin. Emerging from the Twentieth or Twenty-First Century, this piece exemplifies Duruflé's mastery of choral composition. With its serene melodies and rich harmonies, Ubi Caritas conveys a sense of divine love and unity, inviting listeners into a contemplative space of reverence and compassion.",
     "language": "Latin",
-    "musicalPeriod": "TwentiethOrTwentyFirstCentury",
+    "musicalPeriod": "20th/21st Century",
     "voicings": [
       {
         "voices": [
@@ -375,7 +381,8 @@
       "tonic": "G",
       "mode": "Ionian"
     },
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11539410.jpg"
+    "durationSeconds": 900,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
   },
   {
     "id": "50be02cc-7849-437e-af09-eb0fffb90536",
@@ -429,6 +436,7 @@
       "tonic": "G",
       "mode": "Ionian"
     },
+    "durationSeconds": 540,
     "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
   },
   {
@@ -483,7 +491,8 @@
       "tonic": "D",
       "mode": "Phrygian"
     },
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11539410.jpg"
+    "durationSeconds": 725,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
   },
   {
     "id": "a7b3e7cf-c7e3-4c09-8d19-1fcf95f4e8e3",
@@ -537,7 +546,8 @@
       "tonic": "F",
       "mode": "Lydian"
     },
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11539410.jpg"
+    "durationSeconds": 420,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
   },
   {
     "id": "ba2c6b9d-66a8-4991-b5d2-1447a06c4da7",
@@ -545,7 +555,7 @@
     "composer": "Samuel Barber",
     "description": "Agnus Dei is a setting of the Latin prayer Agnus Dei by Samuel Barber, sung in Latin. Composed in the Twentieth or Twenty-First Century, this contemplative piece reflects on the Lamb of God and his sacrificial love. With its plaintive melodies and ethereal harmonies, Agnus Dei evokes a sense of reverence and awe, inviting listeners into a sacred space of prayer and reflection.",
     "language": "Latin",
-    "musicalPeriod": "TwentiethOrTwentyFirstCentury",
+    "musicalPeriod": "20th/21st Century",
     "voicings": [
       {
         "voices": [
@@ -591,13 +601,15 @@
       "tonic": "G",
       "mode": "Dorian"
     },
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11539410.jpg"
+    "durationSeconds": 95,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
   },
   {
     "id": "289514d3-2d2f-45fc-8d58-f45f95a00bc7",
     "title": "Mass in B minor",
     "composer": "Johann Sebastian Bach",
     "description": "Mass in B minor, composed by Johann Sebastian Bach, is a monumental choral composition that epitomizes the Baroque era's artistic grandeur and spiritual depth. Sung in Latin, this masterpiece showcases Bach's mastery of polyphony, harmonic complexity, and contrapuntal brilliance. Bach's Mass in B minor remains a pinnacle of sacred choral repertoire, revered for its sublime beauty and profound expression of faith.",
+    "language": "Latin",
     "musicalPeriod": "Baroque",
     "voicings": [
       {
@@ -644,7 +656,8 @@
       "tonic": "B",
       "mode": "Ionian"
     },
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11539410.jpg"
+    "durationSeconds": 210,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
   },
   {
     "id": "c2bb4f45-7cb1-4e17-8d0e-abb8de0d70fc",
@@ -698,6 +711,7 @@
       "tonic": "F",
       "mode": "Dorian"
     },
+    "durationSeconds": 485,
     "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
   }
 ]

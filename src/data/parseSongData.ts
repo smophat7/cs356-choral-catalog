@@ -23,6 +23,7 @@ export interface RawSongData {
   voicings: RawVoicingData[];
   mode: Mode;
   coverImageUrl: string;
+  durationSeconds: number;
 }
 
 export function parseSongData(songData: RawSongData[]): Song[] {
@@ -54,6 +55,7 @@ export function parseSongData(songData: RawSongData[]): Song[] {
       voicings: voicings,
       mode: song.mode,
       coverImageUrl: song.coverImageUrl,
+      durationSeconds: song.durationSeconds,
     });
   }
 

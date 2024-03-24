@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import {
   Button,
@@ -8,6 +8,7 @@ import {
   ComboboxItem,
   Grid,
   Group,
+  Kbd,
   Modal,
   MultiSelect,
   Pill,
@@ -15,7 +16,7 @@ import {
   Stack,
   TextInput,
 } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
+import { useDisclosure, useHotkeys } from "@mantine/hooks";
 import { IconFilter, IconSearch, IconX } from "@tabler/icons-react";
 
 import { MusicalPeriod, Song } from "../types";
@@ -37,6 +38,20 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   >([]);
   const [composerFilter, setComposerFilter] = useState<string | null>(null);
 
+  // Hotkey for search text input focus
+  const searchTextInputRef = useRef<HTMLInputElement>(null);
+  useHotkeys([
+    [
+      "ctrl+K",
+      () => {
+        if (searchTextInputRef.current) {
+          searchTextInputRef.current.focus();
+        }
+      },
+    ],
+  ]);
+
+  // Modal state
   const [opened, { open, close }] = useDisclosure(false);
 
   // Apply filters (except search text)
@@ -116,26 +131,30 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     (composerFilter ? 1 : 0);
 
   return (
-    <Card shadow="sm" withBorder>
+    <Card shadow="sm">
       <Stack>
         <Grid align="center">
           <Grid.Col span={8}>
             <Filter>
               <TextInput
-                leftSectionPointerEvents="none"
                 leftSection={<IconSearch />}
+                rightSectionWidth={125}
                 rightSection={
-                  <CloseButton
-                    onClick={() => {
-                      setSearchTextFilter("");
-                    }}
-                  />
+                  <Group wrap="nowrap">
+                    <CloseButton
+                      onClick={() => {
+                        setSearchTextFilter("");
+                      }}
+                    />
+                    <Kbd>Ctrl + K</Kbd>
+                  </Group>
                 }
                 placeholder="Search anything"
                 value={searchTextFilter}
                 onChange={(event) =>
                   setSearchTextFilter(event.currentTarget.value)
                 }
+                ref={searchTextInputRef}
               />
             </Filter>
           </Grid.Col>
