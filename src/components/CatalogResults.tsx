@@ -1,5 +1,7 @@
 import React from "react";
 
+import { ScrollArea } from "@mantine/core";
+
 import { Song } from "../types";
 
 interface Props {
@@ -8,7 +10,7 @@ interface Props {
 
 const CatalogResults: React.FC<Props> = ({ songs }) => {
   return (
-    <div>
+    <ScrollArea>
       {songs.map((song) => (
         <div key={song.id}>
           <h2>{song.title}</h2>
@@ -16,7 +18,7 @@ const CatalogResults: React.FC<Props> = ({ songs }) => {
           <p>{song.description}</p>
         </div>
       ))}
-    </div>
+    </ScrollArea>
   );
 };
 

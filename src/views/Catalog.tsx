@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Box, Stack } from "@mantine/core";
+import { Flex } from "@mantine/core";
 
 import CatalogResults from "../components/CatalogResults";
 import Search from "../components/Search";
@@ -14,12 +14,10 @@ const Catalog: React.FC<Props> = ({ songs }) => {
   const [filteredSongs, setFilteredSongs] = useState<Song[]>(songs);
 
   return (
-    <Box h="100%">
-      <Stack h="100%">
-        <Search allSongs={songs} onFilterChange={setFilteredSongs} />
-        <CatalogResults songs={filteredSongs} />
-      </Stack>
-    </Box>
+    <Flex h="100%" direction="column">
+      <Search allSongs={songs} onFilterChange={setFilteredSongs} />
+      <CatalogResults songs={filteredSongs} />
+    </Flex>
   );
 };
 

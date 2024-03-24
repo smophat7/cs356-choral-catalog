@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import {
+  Box,
   Button,
   Chip,
   CloseButton,
@@ -17,7 +18,6 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { IconFilter, IconSearch } from "@tabler/icons-react";
 
-import { APP_HEADER_HEIGHT } from "../constants";
 import { MusicalPeriod, Song } from "../types";
 import Filter from "./Filter";
 
@@ -105,14 +105,8 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     }));
 
   return (
-    <>
-      <Stack
-        w="100%"
-        pos="sticky"
-        top={APP_HEADER_HEIGHT}
-        p="sm"
-        bg="var(--mantine-color-body)"
-      >
+    <Box flex={1}>
+      <Stack w="100%" bg="var(--mantine-color-body)">
         <Filter title="Search">
           <TextInput
             leftSectionPointerEvents="none"
@@ -205,7 +199,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
           </Filter>
         </Stack>
       </Modal>
-    </>
+    </Box>
   );
 };
 
