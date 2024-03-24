@@ -1,10 +1,14 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import { RouteEndpoints } from "../types";
+import { RouteEndpoints, Song } from "../types";
 import Catalog from "../views/Catalog";
 import MyLibrary from "../views/MyLibrary";
 
-const AppRoutes: React.FC = () => {
+interface Props {
+  songs: Song[];
+}
+
+const AppRoutes: React.FC<Props> = ({ songs }) => {
   return (
     <Routes>
       {/* Reroute to a page on index */}
@@ -14,7 +18,10 @@ const AppRoutes: React.FC = () => {
       />
       <Route path="*" element={<Navigate to="/" />} />
 
-      <Route path={RouteEndpoints.Catalog} element={<Catalog />} />
+      <Route
+        path={RouteEndpoints.Catalog}
+        element={<Catalog songs={songs} />}
+      />
       <Route path={RouteEndpoints.MyLibrary} element={<MyLibrary />} />
     </Routes>
   );

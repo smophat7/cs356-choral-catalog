@@ -1,12 +1,13 @@
 import { Mode, MusicalPeriod, Voicing } from "./";
 
 export interface Song {
+  id: string;
   title: string;
   composer: string;
   description: string;
   language: string;
   musicalPeriod: MusicalPeriod;
-  voicing: Voicing;
+  voicings: Voicing[];
   mode: Mode;
   coverImageUrl: string;
   // ageLevel: string;

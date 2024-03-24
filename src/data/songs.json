@@ -1,0 +1,704 @@
+[
+  {
+    "id": "08b7cf5d-3d3f-4483-b1bb-8c1d6a39d6cc",
+    "title": "Ave Maria",
+    "composer": "Franz Schubert",
+    "description": "A sacred choral composition",
+    "language": "Latin",
+    "musicalPeriod": "Romantic",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "A",
+      "mode": "Ionian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "4503c75f-b1fb-4b8b-8a3d-435f25143e7e",
+    "title": "O Magnum Mysterium",
+    "composer": "Tomas Luis de Victoria",
+    "description": "A sacred choral motet",
+    "language": "Latin",
+    "musicalPeriod": "Renaissance",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "G", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "D", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "G", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "D",
+      "mode": "Dorian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "79832746-54e3-4b95-8582-269e29c4af5f",
+    "title": "Hallelujah",
+    "composer": "Leonard Cohen",
+    "description": "A popular choral arrangement",
+    "language": "English",
+    "musicalPeriod": "TwentiethOrTwentyFirstCentury",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "C",
+      "mode": "Mixolydian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "14bb97c9-22eb-4df0-9f2e-00771a372f9b",
+    "title": "A Mighty Fortress Is Our God",
+    "composer": "Martin Luther",
+    "description": "A famous hymn",
+    "language": "German",
+    "musicalPeriod": "Renaissance",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "G", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "D", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "G", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "D",
+      "mode": "Lydian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "ca617c82-98a0-46b3-bd35-6843a725f34f",
+    "title": "O Holy Night",
+    "composer": "Adolphe Adam",
+    "description": "A popular Christmas carol",
+    "language": "French",
+    "musicalPeriod": "Romantic",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "C",
+      "mode": "Ionian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "0f445535-075b-4d7f-8d02-605e81c0e8d7",
+    "title": "Duruflé Requiem",
+    "composer": "Maurice Duruflé",
+    "description": "A setting of the Requiem Mass by Maurice Duruflé",
+    "language": "Latin",
+    "musicalPeriod": "TwentiethOrTwentyFirstCentury",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "D",
+      "mode": "Mixolydian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "d4866f01-28c2-41e1-b0cd-6798c2d8c0c6",
+    "title": "Ubi Caritas",
+    "composer": "Maurice Duruflé",
+    "description": "A choral motet by Maurice Duruflé",
+    "language": "Latin",
+    "musicalPeriod": "TwentiethOrTwentyFirstCentury",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "G",
+      "mode": "Ionian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "50be02cc-7849-437e-af09-eb0fffb90536",
+    "title": "Gloria",
+    "composer": "Antonio Vivaldi",
+    "description": "A choral work from Vivaldi's Gloria",
+    "language": "Latin",
+    "musicalPeriod": "Baroque",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "G", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "G",
+      "mode": "Ionian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "f63b51d5-8ef1-4be9-a8e4-f7b3e6fd45d2",
+    "title": "Lacrimosa",
+    "composer": "Wolfgang Amadeus Mozart",
+    "description": "A movement from the Requiem Mass in D minor",
+    "language": "Latin",
+    "musicalPeriod": "Classical",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "D", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "G", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "D",
+      "mode": "Phrygian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "a7b3e7cf-c7e3-4c09-8d19-1fcf95f4e8e3",
+    "title": "Ave Verum Corpus",
+    "composer": "Wolfgang Amadeus Mozart",
+    "description": "A short Eucharistic hymn",
+    "language": "Latin",
+    "musicalPeriod": "Classical",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "D", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "G", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "F",
+      "mode": "Lydian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "ba2c6b9d-66a8-4991-b5d2-1447a06c4da7",
+    "title": "Agnus Dei",
+    "composer": "Samuel Barber",
+    "description": "A setting of the Latin prayer Agnus Dei",
+    "language": "Latin",
+    "musicalPeriod": "TwentiethOrTwentyFirstCentury",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "G",
+      "mode": "Dorian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "289514d3-2d2f-45fc-8d58-f45f95a00bc7",
+    "title": "Mass in B minor",
+    "composer": "Johann Sebastian Bach",
+    "description": "A monumental choral composition",
+    "language": "Latin",
+    "musicalPeriod": "Baroque",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "B",
+      "mode": "Ionian"
+    },
+    "coverImageUrl": "asdf.com"
+  },
+  {
+    "id": "c2bb4f45-7cb1-4e17-8d0e-abb8de0d70fc",
+    "title": "Stabat Mater",
+    "composer": "Giovanni Battista Pergolesi",
+    "description": "A sacred choral work",
+    "language": "Latin",
+    "musicalPeriod": "Baroque",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "A", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": ["page.com"]
+        }
+      }
+    ],
+    "mode": {
+      "tonic": "F",
+      "mode": "Dorian"
+    },
+    "coverImageUrl": "asdf.com"
+  }
+]
