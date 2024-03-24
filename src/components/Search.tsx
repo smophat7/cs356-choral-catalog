@@ -7,6 +7,7 @@ import {
   CloseIcon,
   ComboboxData,
   ComboboxItem,
+  Container,
   Group,
   Modal,
   MultiSelect,
@@ -14,7 +15,9 @@ import {
   Stack,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { IconFilter } from "@tabler/icons-react";
 
+import { APP_HEADER_HEIGHT } from "../constants";
 import { MusicalPeriod, Song } from "../types";
 import Filter from "./Filter";
 
@@ -80,7 +83,16 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
 
   return (
     <>
-      <Box>
+      <Stack
+        w="100%"
+        pos="sticky"
+        top={APP_HEADER_HEIGHT}
+        p="sm"
+        bg="var(--mantine-color-body)"
+      >
+        <Button onClick={open} leftSection={<IconFilter />} fullWidth>
+          All Filters
+        </Button>
         <Group pb="sm">
           {languageFilter && (
             <Chip
@@ -116,8 +128,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
             </Chip>
           )}
         </Group>
-        <Button onClick={open}>All Filters</Button>
-      </Box>
+      </Stack>
       <Modal title="All Filters" opened={opened} onClose={close} centered>
         <Stack>
           <Filter title="Musical Period">
