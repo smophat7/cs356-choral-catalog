@@ -131,7 +131,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     (composerFilter ? 1 : 0);
 
   return (
-    <Card shadow="sm">
+    <Card shadow="sm" p="sm">
       <Stack>
         <Grid align="center">
           <Grid.Col span={8}>

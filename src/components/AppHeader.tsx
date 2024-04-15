@@ -12,17 +12,19 @@ const AppHeader: React.FC = () => {
     onClick: () => {
       navigate(route);
     },
-    variant: location.pathname === route ? "filled" : "subtle",
+    variant: location.pathname === route ? "outline" : "subtle",
   });
 
   return (
     <AppShell.Header>
-      <Group h="100%" gap="sm" px="md">
+      <Group h="100%" gap="sm" px="sm" justify="space-between">
         <Title order={2}>Choral Sheet Music</Title>
-        <Button {...getButtonProps(RouteEndpoints.Catalog)}>Catalog</Button>
-        <Button {...getButtonProps(RouteEndpoints.MyLibrary)}>
-          My Library
-        </Button>
+        <Group gap="sm">
+          <Button {...getButtonProps(RouteEndpoints.Catalog)}>Catalog</Button>
+          <Button {...getButtonProps(RouteEndpoints.MyLibrary)}>
+            My Library
+          </Button>
+        </Group>
       </Group>
     </AppShell.Header>
   );

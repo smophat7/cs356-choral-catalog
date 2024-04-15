@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Box, Flex, NavLink, ScrollArea, Stack } from "@mantine/core";
+import { Box, Divider, Flex, NavLink, ScrollArea, Stack } from "@mantine/core";
 
 import { Song } from "../types";
 import SongDetails from "./SongDetails";
@@ -25,18 +25,22 @@ const CatalogResults: React.FC<Props> = ({ songs }) => {
             {songs && songs.length > 0 && (
               <>
                 {songs.map((song, index) => (
-                  <NavLink
-                    key={index}
-                    onClick={() => setSelectedSong(song)}
-                    active={selectedSong === song}
-                    label={getLabel(song)}
-                    description={getDescription(song)}
-                  />
+                  <>
+                    <NavLink
+                      key={index}
+                      onClick={() => setSelectedSong(song)}
+                      active={selectedSong === song}
+                      label={getLabel(song)}
+                      description={getDescription(song)}
+                    />
+                    <Divider />
+                  </>
                 ))}
               </>
             )}
           </Stack>
         </ScrollArea>
+        <Divider orientation="vertical" />
         <ScrollArea w="100%" pl="md" pt="md">
           {selectedSong && <SongDetails song={selectedSong} />}
         </ScrollArea>
