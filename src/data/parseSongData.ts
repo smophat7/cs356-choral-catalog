@@ -11,6 +11,8 @@ import {
 interface RawVoicingData {
   voices: StandardVoice[] | BasicVoice[];
   sheetMusicPreview: SheetMusicPreview;
+  audioUrl: string;
+  videoUrl: string;
 }
 
 export interface RawSongData {
@@ -41,7 +43,12 @@ export function parseSongData(songData: RawSongData[]): Song[] {
         } else {
           throw new Error("Invalid voice type");
         }
-        return new Voicing(voices, rawVoicing.sheetMusicPreview);
+        return new Voicing(
+          voices,
+          rawVoicing.sheetMusicPreview,
+          rawVoicing.audioUrl,
+          rawVoicing.videoUrl
+        );
       }
     );
 

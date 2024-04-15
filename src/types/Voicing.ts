@@ -27,13 +27,19 @@ export interface BasicVoice {
 export class Voicing {
   voices: StandardVoice[] | BasicVoice[];
   sheetMusicPreview: SheetMusicPreview;
+  audioUrl: string;
+  videoUrl: string;
 
   constructor(
     voices: StandardVoice[] | BasicVoice[],
-    sheetMusicPreview: SheetMusicPreview
+    sheetMusicPreview: SheetMusicPreview,
+    audioUrl: string,
+    videoUrl: string
   ) {
     this.voices = voices;
     this.sheetMusicPreview = sheetMusicPreview;
+    this.audioUrl = audioUrl;
+    this.videoUrl = videoUrl;
 
     // Validate that the part numbers are correct for BasicVoice (must be 1, 2, 3, 4, etc.)
     // For example, if there are 3 BasicVoices, the parts should be 1, 2, 3

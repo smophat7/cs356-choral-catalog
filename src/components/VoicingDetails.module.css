@@ -1,0 +1,14 @@
+.control {
+  &[data-inactive] {
+    opacity: 0;
+    cursor: default;
+  }
+}
+
+.indicator {
+  background-color: var(--mantine-color-gray-5);
+
+  &[data-active] {
+    background-color: var(--mantine-color-gray-8);
+  }
+}

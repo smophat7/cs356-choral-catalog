@@ -1,22 +1,23 @@
 import {
+  AspectRatio,
+  Box,
   Divider,
   Grid,
   Image,
-  Spoiler,
   Table,
+  Tabs,
   Text,
   Title,
 } from "@mantine/core";
 
 import { ModeType, Song, Voicing } from "../types";
+import VoicingDetails from "./VoicingDetails";
 
 interface Props {
   song: Song;
 }
 
 const SongDetails: React.FC<Props> = ({ song }) => {
-  const SPOILER_HEIGHT = 200;
-
   const getFriendlyModeType = (mode: ModeType) => {
     if (mode === "Ionian") return "Major";
     if (mode === "Aeolian") return "Minor";
@@ -42,30 +43,39 @@ const SongDetails: React.FC<Props> = ({ song }) => {
 
   const availableVoicings = (voicings: Voicing[]) => (
     <>
-      <Text>Available in the following voicings:</Text>
-      <ul>
+      <Text>Available in:</Text>
+      <Tabs defaultValue="0">
+        <Tabs.List pos="sticky" top={0} bg="white" style={{ zIndex: 1 }}>
+          {voicings.map((voicing, index) => (
+            <Tabs.Tab key={index} value={index.toString()}>
+              {voicing.toString()}
+            </Tabs.Tab>
+          ))}
+        </Tabs.List>
         {voicings.map((voicing, index) => (
-          <li key={index}>{voicing.toString()}</li>
+          <Tabs.Panel key={index} value={index.toString()}>
+            <VoicingDetails key={index} voicing={voicing} />
+          </Tabs.Panel>
         ))}
-      </ul>
+      </Tabs>
     </>
   );
 
   return (
-    <>
-      <Grid gutter="lg" w="100%">
+    <Box pl="md" pr="md" pb="md" mt="md">
+      <Grid gutter="lg">
         <Grid.Col span={2}>
-          <Image mah={SPOILER_HEIGHT + 25} w="fit" src={song.coverImageUrl} />
+          <AspectRatio ratio={3 / 4}>
+            <Image src={song.coverImageUrl} alt={`${song.title} cover`} />
+          </AspectRatio>
         </Grid.Col>
         <Grid.Col span={7}>
-          <Spoiler hideLabel="Less" showLabel="More" maxHeight={SPOILER_HEIGHT}>
-            <Title order={2}>{song.title}</Title>
-            <Text fw={500}>{song.composer}</Text>
-            <Text pt="sm">{song.description}</Text>
-          </Spoiler>
+          <Title order={2}>{song.title}</Title>
+          <Text fw={500}>{song.composer}</Text>
+          <Text pt="sm">{song.description}</Text>
         </Grid.Col>
-        <Grid.Col span={3}>
-          <Table>
+        <Grid.Col span={2}>
+          <Table withTableBorder width="100%">
             <Table.Tbody>
               {tableRow(
                 "Duration",
@@ -84,7 +94,7 @@ const SongDetails: React.FC<Props> = ({ song }) => {
 
       <Divider my="md" />
       {availableVoicings(song.voicings)}
-    </>
+    </Box>
   );
 };
 
