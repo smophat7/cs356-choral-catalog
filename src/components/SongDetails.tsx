@@ -1,21 +1,21 @@
 import { useEffect, useState } from "react";
 
 import {
-  Anchor,
   AspectRatio,
   Box,
+  Button,
   Card,
   Grid,
-  Group,
   Image,
-  List,
+  Menu,
+  rem,
   Stack,
   Table,
   Tabs,
   Text,
   Title,
 } from "@mantine/core";
-import { IconExternalLink } from "@tabler/icons-react";
+import { IconExternalLink, IconShoppingCart } from "@tabler/icons-react";
 
 import { Song, Voicing } from "../types";
 import {
@@ -90,23 +90,37 @@ const SongDetails: React.FC<Props> = ({ song }) => {
               </Table.Tbody>
             </Table>
             {song.purchaseUrls.length > 0 && (
-              <>
-                <Stack gap={0}>
-                  <Text>Purchase at:</Text>
-                  <List withPadding>
-                    {song.purchaseUrls.map((url, index) => (
-                      <List.Item key={index}>
-                        <Anchor href={url} target="_blank">
-                          <Group align="center" gap={3}>
-                            {getPurchaseUrlSourceName(url)}
-                            <IconExternalLink />
-                          </Group>
-                        </Anchor>
-                      </List.Item>
-                    ))}
-                  </List>
-                </Stack>
-              </>
+              <Menu trigger="click-hover" openDelay={100} closeDelay={400}>
+                <Menu.Target>
+                  <Button
+                    rightSection={<IconShoppingCart />}
+                    color="gray"
+                    variant="outline"
+                    fullWidth
+                    size="compact-md"
+                  >
+                    Purchase {`(${song.purchaseUrls.length})`}
+                  </Button>
+                </Menu.Target>
+                <Menu.Dropdown>
+                  {song.purchaseUrls.map((url, index) => (
+                    <Menu.Item
+                      key={index}
+                      leftSection={
+                        <IconExternalLink
+                          style={{ width: rem(14), height: rem(14) }}
+                        />
+                      }
+                      component="a"
+                      href={url}
+                      target="_blank"
+                      color="blue"
+                    >
+                      {getPurchaseUrlSourceName(url)}
+                    </Menu.Item>
+                  ))}
+                </Menu.Dropdown>
+              </Menu>
             )}
           </Stack>
         </Grid.Col>
