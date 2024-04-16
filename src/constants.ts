@@ -1,1 +1,1 @@
-export const APP_HEADER_HEIGHT = 60;
+export const APP_HEADER_HEIGHT = 70;

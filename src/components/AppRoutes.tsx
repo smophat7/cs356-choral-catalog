@@ -2,7 +2,6 @@ import { Navigate, Route, Routes } from "react-router-dom";
 
 import { RouteEndpoints, Song } from "../types";
 import Catalog from "../views/Catalog";
-import MyLibrary from "../views/MyLibrary";
 
 interface Props {
   songs: Song[];
@@ -22,7 +21,6 @@ const AppRoutes: React.FC<Props> = ({ songs }) => {
         path={RouteEndpoints.Catalog}
         element={<Catalog songs={songs} />}
       />
-      <Route path={RouteEndpoints.MyLibrary} element={<MyLibrary />} />
     </Routes>
   );
 };

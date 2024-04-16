@@ -4,10 +4,12 @@ import "react-h5-audio-player/lib/styles.css";
 
 import { useEffect, useState } from "react";
 
-import { AppShell, MantineProvider } from "@mantine/core";
+import { AppShell, MantineProvider, Modal } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 
 import AppHeader from "./components/AppHeader";
 import AppRoutes from "./components/AppRoutes";
+import Welcome from "./components/Welcome";
 import { APP_HEADER_HEIGHT } from "./constants";
 import { parseSongData, RawSongData } from "./data/parseSongData";
 import songData from "./data/songs.json";
@@ -16,6 +18,8 @@ import { Song } from "./types";
 
 export default function App() {
   const [songs, setSongs] = useState<Song[]>([]);
+  const [openedWelcomeModal, { close: closeWelcomeModal }] =
+    useDisclosure(true);
 
   useEffect(() => {
     setSongs(parseSongData(songData as RawSongData[]));
@@ -27,6 +31,15 @@ export default function App() {
         <AppHeader />
         <AppShell.Main h="100dvh">
           <AppRoutes songs={songs} />
+          <Modal
+            opened={openedWelcomeModal}
+            onClose={closeWelcomeModal}
+            withCloseButton={false}
+            closeOnEscape={false}
+            closeOnClickOutside={false}
+          >
+            <Welcome close={closeWelcomeModal} />
+          </Modal>
         </AppShell.Main>
       </AppShell>
     </MantineProvider>
