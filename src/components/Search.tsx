@@ -10,6 +10,7 @@ import {
   Kbd,
   Modal,
   Pill,
+  rem,
   Select,
   Stack,
   Tabs,
@@ -21,6 +22,7 @@ import { IconFilter, IconPlus, IconSearch, IconX } from "@tabler/icons-react";
 import { MusicalPeriod, Song } from "../types";
 import { isInVoicingCategory, VoicingCategory } from "../types/VoicingFilter";
 import Filter from "./Filter";
+import SearchTab from "./SearchTab";
 
 function generateComboboxData(items: string[]): ComboboxItem[] {
   return items
@@ -43,7 +45,7 @@ interface FilterSet {
 }
 
 const initialFilterSet: FilterSet = {
-  name: "Default",
+  name: "Search 1",
   searchTextFilter: "",
   voicingCategoryFilter: null,
   languageFilter: null,
@@ -62,17 +64,15 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   const [filterSets, setFilterSets] = useState<FilterSet[]>([initialFilterSet]);
   const [activeFilterSetIndex, setActiveFilterSetIndex] = useState(0);
   const activeFilterSet = filterSets[activeFilterSetIndex];
-
+  const [deleteIndex, setDeleteIndex] = useState<number | null>(null);
   const [searchTextFilteredSongs, setSearchTextFilteredSongs] = useState<
     Song[] | null
   >(null);
-
   const updateActiveFilterSet = (newFilterSet: FilterSet) => {
     const newFilterSets = [...filterSets];
     newFilterSets[activeFilterSetIndex] = newFilterSet;
     setFilterSets(newFilterSets);
   };
-
   const setSearchTextFilter = (searchTextFilter: string) => {
     updateActiveFilterSet({ ...activeFilterSet, searchTextFilter });
   };
@@ -140,8 +140,39 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     ],
   ]);
 
+  const updateFilterSetName = (index: number, name: string) => {
+    const newFilterSets = [...filterSets];
+    newFilterSets[index].name = name;
+    setFilterSets(newFilterSets);
+  };
+
+  const deleteFilterSet = (index: number) => {
+    if (filterSets.length === 1) {
+      return;
+    }
+    setDeleteIndex(index); // Set deleteIndex to trigger deletion on next render
+  };
+
   // Modal state
   const [opened, { open, close }] = useDisclosure(false);
+
+  useEffect(() => {
+    if (deleteIndex !== null) {
+      setFilterSets((prevFilterSets) => {
+        const newFilterSets = [...prevFilterSets];
+        newFilterSets.splice(deleteIndex, 1);
+        return newFilterSets;
+      });
+
+      if (deleteIndex <= activeFilterSetIndex) {
+        const newActiveIndex =
+          activeFilterSetIndex > 0 ? activeFilterSetIndex - 1 : 0;
+        setActiveFilterSetIndex(newActiveIndex);
+      }
+
+      setDeleteIndex(null); // Reset deleteIndex
+    }
+  }, [deleteIndex, activeFilterSetIndex]);
 
   // Apply filters (except search text)
   useEffect(() => {
@@ -232,11 +263,20 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     return (
       <>
         {filterSets.map((filterSet, index) => (
-          <Tabs.Tab key={index} value={index.toString()}>
-            {filterSet.name}
-          </Tabs.Tab>
+          <SearchTab
+            key={index}
+            filterSet={filterSet}
+            updateName={(name) => updateFilterSetName(index, name)}
+            deleteFilterSet={(index) => deleteFilterSet(index)}
+            index={index}
+            active={index === activeFilterSetIndex}
+            numFilterTabs={filterSets.length}
+          />
         ))}
-        <Tabs.Tab value="new" rightSection={<IconPlus />}>
+        <Tabs.Tab
+          value="new"
+          leftSection={<IconPlus style={{ width: rem(15), height: rem(15) }} />}
+        >
           New
         </Tabs.Tab>
       </>
@@ -245,10 +285,14 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
 
   return (
     <Tabs
-      value={activeFilterSetIndex.toString()}
+      value={
+        activeFilterSetIndex < filterSets.length
+          ? activeFilterSetIndex.toString()
+          : (filterSets.length - 1).toString()
+      }
       onChange={setActiveFilterTab}
       variant="outline"
-      p="sm"
+      p={0}
       my="md"
     >
       <Tabs.List>{tabsList()}</Tabs.List>
