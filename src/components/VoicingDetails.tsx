@@ -1,3 +1,5 @@
+import AudioPlayer from "react-h5-audio-player";
+
 import { Carousel } from "@mantine/carousel";
 import {
   AspectRatio,
@@ -25,6 +27,7 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
     { open: openSheetMusicModal, close: closeSheetMusicModal },
   ] = useDisclosure(false);
   const MODAL_HEADER_HEIGHT = 60;
+  const AUDIO_PLAYER_HEIGHT = 80;
 
   const range = (vocalRange: VocalRange) => (
     <>
@@ -35,27 +38,36 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
   );
 
   const sheetMusic = (sheetMusicPreview: SheetMusicPreview) => (
-    <Carousel
-      slideSize="60%"
-      slideGap="xs"
-      controlSize={40}
-      height={`calc(100vh - ${MODAL_HEADER_HEIGHT}px)`}
-      speed={20}
-      classNames={classes}
-      withIndicators
-    >
-      {sheetMusicPreview.pageUrls.map((url, index) => (
-        <Carousel.Slide key={index}>
-          <Image
-            src={url}
-            alt={`Sheet music page ${index + 1}`}
-            radius="md"
-            h={`calc(100vh - ${MODAL_HEADER_HEIGHT}px)`}
-            fit="contain"
-          />
-        </Carousel.Slide>
-      ))}
-    </Carousel>
+    <>
+      <Carousel
+        slideSize="60%"
+        slideGap="xs"
+        controlSize={40}
+        height={`calc(100vh - ${MODAL_HEADER_HEIGHT}px - ${AUDIO_PLAYER_HEIGHT}px)`}
+        speed={20}
+        classNames={classes}
+        withIndicators
+      >
+        {sheetMusicPreview.pageUrls.map((url, index) => (
+          <Carousel.Slide key={index}>
+            <Image
+              src={url}
+              alt={`Sheet music page ${index + 1}`}
+              radius="md"
+              h={`calc(100vh - ${MODAL_HEADER_HEIGHT}px - ${AUDIO_PLAYER_HEIGHT}px)`}
+              fit="contain"
+            />
+          </Carousel.Slide>
+        ))}
+      </Carousel>
+      <AudioPlayer
+        src={voicing.audioUrl}
+        autoPlay
+        volume={0.5}
+        showFilledVolume
+        style={{ height: `${AUDIO_PLAYER_HEIGHT}px` }}
+      />
+    </>
   );
 
   return (
