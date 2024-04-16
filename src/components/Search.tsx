@@ -33,10 +33,12 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   >(null);
   const [searchTextFilter, setSearchTextFilter] = useState<string>("");
   const [languageFilter, setLanguageFilter] = useState<string | null>(null);
-  const [musicalPeriodFilter, setMusicalPeriodFilter] = useState<
-    MusicalPeriod[]
-  >([]);
+  const [musicalPeriodFilter, setMusicalPeriodFilter] =
+    useState<MusicalPeriod | null>(null);
   const [composerFilter, setComposerFilter] = useState<string | null>(null);
+  const [accompanimentFilter, setAccompanimentFilter] = useState<string | null>(
+    null
+  );
 
   // Hotkey for search text input focus
   const searchTextInputRef = useRef<HTMLInputElement>(null);
@@ -60,9 +62,11 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     const filteredSongs = songsToFilterFrom.filter(
       (song) =>
         (languageFilter === null || song.language === languageFilter) &&
-        (musicalPeriodFilter.length == 0 ||
-          musicalPeriodFilter.includes(song.musicalPeriod)) &&
-        (composerFilter === null || song.composer === composerFilter)
+        (musicalPeriodFilter === null ||
+          song.musicalPeriod === musicalPeriodFilter) &&
+        (composerFilter === null || song.composer === composerFilter) &&
+        (accompanimentFilter === null ||
+          song.accompaniment === accompanimentFilter)
     );
     onFilterChange(filteredSongs);
   }, [
@@ -72,6 +76,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     languageFilter,
     musicalPeriodFilter,
     composerFilter,
+    accompanimentFilter,
   ]);
 
   // Apply search text filter
@@ -91,15 +96,10 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     setSearchTextFilteredSongs(filteredSongs);
   }, [allSongs, searchTextFilter]);
 
-  const musicalPeriodData: ComboboxData = Object.values(MusicalPeriod).map(
+  const musicalPeriodData: ComboboxItem[] = Object.values(MusicalPeriod).map(
     (musicalPeriod) => ({
-      group: musicalPeriod,
-      items: [
-        {
-          value: musicalPeriod,
-          label: musicalPeriod,
-        } as ComboboxItem,
-      ],
+      value: musicalPeriod,
+      label: musicalPeriod,
     })
   );
 
@@ -119,16 +119,25 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
       label: composer,
     }));
 
+  const accompanimentData: ComboboxItem[] = allSongs
+    .map((song) => song.accompaniment)
+    .filter((value, index, self) => self.indexOf(value) === index)
+    .map((accompaniment) => ({
+      value: accompaniment,
+      label: accompaniment,
+    }));
+
   const filterPill = (value: string | string[], onRemove: () => void) => (
     <Pill onRemove={onRemove} withRemoveButton size="lg">
-      {Array.isArray(value) ? value.join(", ") : value}
+      {value}
     </Pill>
   );
 
   const numFiltersApplied =
     (languageFilter ? 1 : 0) +
-    (musicalPeriodFilter.length > 0 ? 1 : 0) +
-    (composerFilter ? 1 : 0);
+    (musicalPeriodFilter ? 1 : 0) +
+    (composerFilter ? 1 : 0) +
+    (accompanimentFilter ? 1 : 0);
 
   return (
     <Card shadow="sm" p="sm">
@@ -169,15 +178,21 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
             {languageFilter &&
               filterPill(languageFilter, () => setLanguageFilter(null))}
             {musicalPeriodFilter.length > 0 &&
-              filterPill(musicalPeriodFilter, () => setMusicalPeriodFilter([]))}
+              filterPill(musicalPeriodFilter, () =>
+                setMusicalPeriodFilter(null)
+              )}
             {composerFilter &&
               filterPill(composerFilter, () => setComposerFilter(null))}
+            {accompanimentFilter &&
+              filterPill(accompanimentFilter, () =>
+                setAccompanimentFilter(null)
+              )}
             {numFiltersApplied > 1 && (
               <Button
                 leftSection={<IconX />}
                 onClick={() => {
                   setLanguageFilter(null);
-                  setMusicalPeriodFilter([]);
+                  setMusicalPeriodFilter(null);
                   setComposerFilter(null);
                 }}
                 variant="outline"
@@ -191,15 +206,14 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
       <Modal title="Filters" opened={opened} onClose={close} centered>
         <Stack>
           <Filter title="Musical Period">
-            <MultiSelect
-              placeholder="Select period(s)..."
+            <Select
+              placeholder="Select period..."
               data={musicalPeriodData}
               value={musicalPeriodFilter}
-              onChange={(values) =>
-                setMusicalPeriodFilter(values as MusicalPeriod[])
+              onChange={(value) =>
+                setMusicalPeriodFilter(value as MusicalPeriod)
               }
               clearable
-              hidePickedOptions
               searchable
             />
           </Filter>
@@ -219,6 +233,16 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
               data={composerData}
               value={composerFilter}
               onChange={(value) => setComposerFilter(value)}
+              clearable
+              searchable
+            />
+          </Filter>
+          <Filter title="Accompaniment">
+            <Select
+              placeholder="Select accompaniment..."
+              data={accompanimentData}
+              value={accompanimentFilter}
+              onChange={(value) => setAccompanimentFilter(value)}
               clearable
               searchable
             />

@@ -36,3 +36,7 @@ Generate me 5 songs matching these data structures but in JSON
 #### Output
 
 Exactly as expected and as needed.
+
+## Credits
+
+Most data is from JW Pepper (descriptions, score preview images, cover images, etc.) with some supplemental data from generative AI.

@@ -27,11 +27,11 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
   const MODAL_HEADER_HEIGHT = 60;
 
   const range = (vocalRange: VocalRange) => (
-    <Text>
+    <>
       {vocalRange.low.note}
       {vocalRange.low.octave} - {vocalRange.high.note}
       {vocalRange.high.octave}
-    </Text>
+    </>
   );
 
   const sheetMusic = (sheetMusicPreview: SheetMusicPreview) => (
