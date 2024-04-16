@@ -1,151 +1,12 @@
 [
   {
-    "id": "08b7cf5d-3d3f-4483-b1bb-8c1d6a39d6cc",
-    "title": "Ave Maria",
-    "composer": "Franz Schubert",
-    "description": "Ave Maria by Franz Schubert is a sacred choral composition sung in Latin. It belongs to the Romantic period. The piece is known for its ethereal melodies and serene atmosphere, evoking a sense of reverence and devotion. With its soaring soprano lines and rich harmonies, Ave Maria has become a staple in choral repertoire, cherished for its timeless beauty and spiritual resonance.",
-    "language": "Latin",
-    "musicalPeriod": "Romantic",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "C", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "C", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "A",
-      "mode": "Ionian"
-    },
-    "durationSeconds": 480,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
-  },
-  {
-    "id": "4503c75f-b1fb-4b8b-8a3d-435f25143e7e",
-    "title": "O Magnum Mysterium",
-    "composer": "Tomas Luis de Victoria",
-    "description": "O Magnum Mysterium by Tomas Luis de Victoria is a sacred choral motet sung in Latin. It originates from the Renaissance period, characterized by its intricate polyphony and lush harmonic textures. The piece reflects upon the mystery of the Nativity, depicting the awe-inspiring moment of Christ's birth. O Magnum Mysterium is celebrated for its sublime beauty and profound expression of divine wonder.",
-    "language": "Latin",
-    "musicalPeriod": "Renaissance",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "G", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "D", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "D", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "G", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "D",
-      "mode": "Dorian"
-    },
-    "durationSeconds": 300,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
-  },
-  {
-    "id": "79832746-54e3-4b95-8582-269e29c4af5f",
-    "title": "Hallelujah",
-    "composer": "Leonard Cohen",
-    "description": "Hallelujah by Leonard Cohen is a popular choral arrangement sung in English. Despite originating in the Twentieth or Twenty-First Century, its timeless melody and poignant lyrics have made it a classic across generations. The piece exudes a sense of joy and celebration, with its triumphant chorus inviting listeners to join in praise and gratitude.",
+    "id": "089mef5d-3d3f-4483-8493-fj48va39d68m",
+    "title": "Wild Mountain Thyme",
+    "composer": "Jacob Narverud",
+    "description": "\"And we'll all go together ... to pluck wild mountain thyme, all around the bloomin' heather...\" The gently lilting strains of this traditional Scottish ballad are beautifully set in this arrangement. Lush choral harmonies and well-placed unison lines are carried along by the supportive piano accompaniment.",
     "language": "English",
     "musicalPeriod": "20th/21st Century",
+    "accompaniment": "piano",
     "voicings": [
       {
         "voices": [
@@ -200,354 +61,6 @@
         },
         "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
         "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "C",
-      "mode": "Mixolydian"
-    },
-    "durationSeconds": 360,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
-  },
-  {
-    "id": "14bb97c9-22eb-4df0-9f2e-00771a372f9b",
-    "title": "A Mighty Fortress Is Our God",
-    "composer": "Martin Luther",
-    "description": "A Mighty Fortress Is Our God by Martin Luther is a famous hymn sung in German. Emerging from the Renaissance period, this hymn is a powerful expression of faith and trust in God's protection. Its robust melody and steadfast lyrics serve as a source of strength and comfort, inspiring believers throughout the ages.",
-    "language": "German",
-    "musicalPeriod": "Renaissance",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "G", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "D", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "D", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "G", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "D",
-      "mode": "Lydian"
-    },
-    "durationSeconds": 200,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
-  },
-  {
-    "id": "ca617c82-98a0-46b3-bd35-6843a725f34f",
-    "title": "O Holy Night",
-    "composer": "Adolphe Adam",
-    "description": "O Holy Night by Adolphe Adam is a popular Christmas carol sung in French. Belonging to the Romantic period, this beloved carol beautifully narrates the story of Christ's birth and the redemption he brings to humanity. Its emotive melody and poignant lyrics capture the essence of the Nativity, evoking feelings of awe and reverence.",
-    "language": "French",
-    "musicalPeriod": "Romantic",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "D", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "C", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "C",
-      "mode": "Ionian"
-    },
-    "durationSeconds": 180,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
-  },
-  {
-    "id": "0f445535-075b-4d7f-8d02-605e81c0e8d7",
-    "title": "Duruflé Requiem",
-    "composer": "Maurice Duruflé",
-    "description": "Duruflé Requiem is a setting of the Requiem Mass by Maurice Duruflé, sung in Latin. Composed in the Twentieth or Twenty-First Century, this masterpiece combines traditional Gregorian chant with lush harmonies and expressive melodies. Reflecting on themes of life, death, and eternal rest, the Duruflé Requiem offers solace and contemplation to both performers and listeners alike.",
-    "language": "Latin",
-    "musicalPeriod": "20th/21st Century",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "D", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "C", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "D",
-      "mode": "Mixolydian"
-    },
-    "durationSeconds": 240,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
-  },
-  {
-    "id": "d4866f01-28c2-41e1-b0cd-6798c2d8c0c6",
-    "title": "Ubi Caritas",
-    "composer": "Maurice Duruflé",
-    "description": "Ubi Caritas is a choral motet by Maurice Duruflé, sung in Latin. Emerging from the Twentieth or Twenty-First Century, this piece exemplifies Duruflé's mastery of choral composition. With its serene melodies and rich harmonies, Ubi Caritas conveys a sense of divine love and unity, inviting listeners into a contemplative space of reverence and compassion.",
-    "language": "Latin",
-    "musicalPeriod": "20th/21st Century",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "D", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "C", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "G",
-      "mode": "Ionian"
-    },
-    "durationSeconds": 900,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
-  },
-  {
-    "id": "50be02cc-7849-437e-af09-eb0fffb90536",
-    "title": "Gloria",
-    "composer": "Antonio Vivaldi",
-    "description": "Gloria is a choral work from Vivaldi's Gloria, sung in Latin. Belonging to the Baroque period, this exuberant composition is characterized by its lively rhythms and jubilant melodies. Celebrating the glory of God, the Gloria exudes a sense of fervent praise and adoration, making it a perennial favorite in choral repertoire.",
-    "language": "Latin",
-    "musicalPeriod": "Baroque",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "G", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "D", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "C", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        }
       },
       {
         "voices": [
@@ -556,7 +69,7 @@
             "part": "soprano",
             "range": {
               "low": { "note": "C", "octave": 4 },
-              "high": { "note": "G", "octave": 5 }
+              "high": { "note": "A", "octave": 5 }
             }
           },
           {
@@ -564,7 +77,7 @@
             "part": "soprano",
             "range": {
               "low": { "note": "C", "octave": 4 },
-              "high": { "note": "G", "octave": 5 }
+              "high": { "note": "A", "octave": 5 }
             }
           },
           {
@@ -577,17 +90,38 @@
           },
           {
             "type": "StandardVoice",
-            "part": "alto",
+            "part": "bass",
             "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
             }
-          },
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11561098-1.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-2.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-3.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-4.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-5.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-6.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-7.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-8.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-9.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-10.png",
+            "https://www.jwpepper.com/scores-png/1/11561098-11.png"
+          ]
+        },
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11561098.mp3",
+        "videoUrl": "https://www.youtube.com/embed/sLej_5STqQk"
+      },
+      {
+        "voices": [
           {
             "type": "StandardVoice",
             "part": "tenor",
             "range": {
-              "low": { "note": "D", "octave": 3 },
+              "low": { "note": "C", "octave": 3 },
               "high": { "note": "A", "octave": 4 }
             }
           },
@@ -602,20 +136,68 @@
         ],
         "sheetMusicPreview": {
           "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
+            "https://www.jwpepper.com/scores-png/1/11561099-1.png",
+            "https://www.jwpepper.com/scores-png/1/11561099-2.png",
+            "https://www.jwpepper.com/scores-png/1/11561099-3.png",
+            "https://www.jwpepper.com/scores-png/1/11561099-4.png",
+            "https://www.jwpepper.com/scores-png/1/11561099-5.png",
+            "https://www.jwpepper.com/scores-png/1/11561099-6.png",
+            "https://www.jwpepper.com/scores-png/1/11561099-7.png",
+            "https://www.jwpepper.com/scores-png/1/11561099-8.png"
           ]
-        }
+        },
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11561099.mp3",
+        "videoUrl": "https://www.youtube.com/embed/oGL_dWaaPdM"
+      },
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ],
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11391901-1.png",
+            "https://www.jwpepper.com/scores-png/1/11391901-2.png",
+            "https://www.jwpepper.com/scores-png/1/11391901-3.png",
+            "https://www.jwpepper.com/scores-png/1/11391901-4.png",
+            "https://www.jwpepper.com/scores-png/1/11391901-5.png",
+            "https://www.jwpepper.com/scores-png/1/11391901-6.png",
+            "https://www.jwpepper.com/scores-png/1/11391901-7.png",
+            "https://www.jwpepper.com/scores-png/1/11391901-8.png"
+          ]
+        },
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391901.mp3",
+        "videoUrl": "https://www.youtube.com/embed/12wbWaz3prQ"
       },
       {
         "voices": [
@@ -624,192 +206,45 @@
             "part": 1,
             "range": {
               "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "BasicVoice",
-            "part": 2,
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
+              "high": { "note": "C", "octave": 4 }
             }
           }
         ],
         "sheetMusicPreview": {
           "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
+            "https://www.jwpepper.com/scores-png/1/11526126-1.png",
+            "https://www.jwpepper.com/scores-png/1/11526126-2.png",
+            "https://www.jwpepper.com/scores-png/1/11526126-3.png",
+            "https://www.jwpepper.com/scores-png/1/11526126-4.png",
+            "https://www.jwpepper.com/scores-png/1/11526126-5.png",
+            "https://www.jwpepper.com/scores-png/1/11526126-6.png",
+            "https://www.jwpepper.com/scores-png/1/11526126-7.png",
+            "https://www.jwpepper.com/scores-png/1/11526126-8.png"
           ]
         },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "G",
-      "mode": "Ionian"
-    },
-    "durationSeconds": 540,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
-  },
-  {
-    "id": "f63b51d5-8ef1-4be9-a8e4-f7b3e6fd45d2",
-    "title": "Lacrimosa",
-    "composer": "Wolfgang Amadeus Mozart",
-    "description": "Lacrimosa is a movement from the Requiem Mass in D minor by Wolfgang Amadeus Mozart, sung in Latin. Originating from the Classical period, this poignant piece explores themes of mourning and consolation. With its haunting melodies and emotive harmonies, Lacrimosa captures the profound sorrow and longing inherent in the human experience, offering solace to those in grief.",
-    "language": "Latin",
-    "musicalPeriod": "Classical",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "D", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "D", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "G", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "D",
-      "mode": "Phrygian"
-    },
-    "durationSeconds": 725,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
-  },
-  {
-    "id": "a7b3e7cf-c7e3-4c09-8d19-1fcf95f4e8e3",
-    "title": "Ave Verum Corpus",
-    "composer": "Wolfgang Amadeus Mozart",
-    "description": "Ave Verum Corpus is a short Eucharistic hymn by Wolfgang Amadeus Mozart, sung in Latin. Belonging to the Classical period, this exquisite piece is revered for its simplicity and elegance. With its tender melodies and reverent atmosphere, Ave Verum Corpus encapsulates the profound mystery of the Eucharist, inviting listeners into a sacred space of devotion and contemplation.",
-    "language": "Latin",
-    "musicalPeriod": "Classical",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "D", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "D", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "G", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11526126.mp3",
+        "videoUrl": "https://www.youtube.com/embed/VtAwuUkKQXY"
       }
     ],
     "mode": {
       "tonic": "F",
-      "mode": "Lydian"
+      "mode": "Ionian"
     },
-    "durationSeconds": 420,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
+    "durationSeconds": 210,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11391897.jpg",
+    "purchaseUrls": [
+      "https://www.jwpepper.com/Wild-Mountain-Thyme/11391897.item",
+      "https://www.musicnotes.com/sheetmusic/mtd.asp?ppn=MN0264120"
+    ]
   },
   {
-    "id": "ba2c6b9d-66a8-4991-b5d2-1447a06c4da7",
-    "title": "Agnus Dei",
-    "composer": "Samuel Barber",
-    "description": "Agnus Dei is a setting of the Latin prayer Agnus Dei by Samuel Barber, sung in Latin. Composed in the Twentieth or Twenty-First Century, this contemplative piece reflects on the Lamb of God and his sacrificial love. With its plaintive melodies and ethereal harmonies, Agnus Dei evokes a sense of reverence and awe, inviting listeners into a sacred space of prayer and reflection.",
-    "language": "Latin",
+    "id": "089mef5d-3d3f-4483-8493-fj48va3ejhgu78",
+    "title": "Soon We Will Be Done",
+    "composer": "Kyle Pederson",
+    "description": "Building on the original text, this adaptation of the classic spiritual invites the listener to envision and commit to a better, more just world - a world of inclusion, radical kindness, compassion, love, and grace - a world where we have the courage to champion the inherent dignity and value of all people, a world where we will be done with all the ways we deny a person's worth. Spoken word is incorporated throughout, heightening the intensity of the performance, and giving a sense of immediacy to the challenge for the choir and audience to work together for justice, equity, and wholeness.",
+    "language": "English",
     "musicalPeriod": "20th/21st Century",
+    "accompaniment": "piano",
     "voicings": [
       {
         "voices": [
@@ -848,233 +283,43 @@
         ],
         "sheetMusicPreview": {
           "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
+            "https://www.jwpepper.com/scores-png/1/11197402-3.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-4.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-5.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-6.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-7.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-8.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-9.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-10.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-11.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-12.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-13.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-14.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-15.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-16.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-17.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-18.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-19.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-20.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-21.png",
+            "https://www.jwpepper.com/scores-png/1/11197402-22.png"
           ]
         },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "G",
-      "mode": "Dorian"
-    },
-    "durationSeconds": 95,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
-  },
-  {
-    "id": "289514d3-2d2f-45fc-8d58-f45f95a00bc7",
-    "title": "Mass in B minor",
-    "composer": "Johann Sebastian Bach",
-    "description": "Mass in B minor, composed by Johann Sebastian Bach, is a monumental choral composition that epitomizes the Baroque era's artistic grandeur and spiritual depth. Sung in Latin, this masterpiece showcases Bach's mastery of polyphony, harmonic complexity, and contrapuntal brilliance. Bach's Mass in B minor remains a pinnacle of sacred choral repertoire, revered for its sublime beauty and profound expression of faith.",
-    "language": "Latin",
-    "musicalPeriod": "Baroque",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "C", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "C", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        }
-      },
-      {
-        "voices": [
-          {
-            "type": "BasicVoice",
-            "part": 1,
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "BasicVoice",
-            "part": 2,
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        }
-      },
-      {
-        "voices": [
-          {
-            "type": "BasicVoice",
-            "part": 1,
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11197402.mp3",
+        "videoUrl": "https://www.youtube.com/embed/EBhCYxJ6z7I"
       }
     ],
     "mode": {
       "tonic": "B",
-      "mode": "Ionian"
+      "mode": "Aeolian"
     },
-    "durationSeconds": 210,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11536060.jpg"
-  },
-  {
-    "id": "c2bb4f45-7cb1-4e17-8d0e-abb8de0d70fc",
-    "title": "Stabat Mater",
-    "composer": "Giovanni Battista Pergolesi",
-    "description": "Stabat Mater, composed by Giovanni Battista Pergolesi, is a profoundly moving sacred choral work that depicts the agony of the Virgin Mary at the crucifixion of Jesus. Sung in Latin, this Baroque composition captures the intense emotions of grief and sorrow, inviting listeners to reflect on the profound sacrifice and suffering central to Christian faith. Pergolesi's Stabat Mater is renowned for its poignant melodies and evocative harmonies, offering solace and spiritual resonance to all who hear it.",
-    "language": "Latin",
-    "musicalPeriod": "Baroque",
-    "voicings": [
-      {
-        "voices": [
-          {
-            "type": "StandardVoice",
-            "part": "soprano",
-            "range": {
-              "low": { "note": "C", "octave": 4 },
-              "high": { "note": "A", "octave": 5 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "alto",
-            "range": {
-              "low": { "note": "G", "octave": 3 },
-              "high": { "note": "E", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "tenor",
-            "range": {
-              "low": { "note": "C", "octave": 3 },
-              "high": { "note": "A", "octave": 4 }
-            }
-          },
-          {
-            "type": "StandardVoice",
-            "part": "bass",
-            "range": {
-              "low": { "note": "E", "octave": 2 },
-              "high": { "note": "C", "octave": 3 }
-            }
-          }
-        ],
-        "sheetMusicPreview": {
-          "pageUrls": [
-            "https://www.jwpepper.com/scores-png/1/11391897-1.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-2.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-3.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-4.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-5.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-6.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-7.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-8.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-9.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-10.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-11.png",
-            "https://www.jwpepper.com/scores-png/1/11391897-12.png"
-          ]
-        },
-        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11391897.mp3",
-        "videoUrl": "https://www.youtube.com/embed/fkAhk_gR5YI?si=jDqtRtdlzwhcNAAx"
-      }
-    ],
-    "mode": {
-      "tonic": "F",
-      "mode": "Dorian"
-    },
-    "durationSeconds": 485,
-    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11347705.jpg"
+    "durationSeconds": 180,
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/1/11197402.jpg",
+    "purchaseUrls": [
+      "https://www.jwpepper.com/sheet-music/11197402.item",
+      "https://www.morningstarmusic.com/soon-we-will-be-done-ttb-kyle-pederson.html",
+      "https://www.sheetmusicplus.com/en/product/soon-we-will-be-done-22634070.html",
+      "https://www.musicroom.com/kyle-pederson-soon-we-will-be-done-lower-voices-ecs13694"
+    ]
   }
 ]

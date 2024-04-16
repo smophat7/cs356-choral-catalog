@@ -7,6 +7,7 @@ import {
   Modal,
   Table,
   Text,
+  Title,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconNotes } from "@tabler/icons-react";
@@ -60,10 +61,13 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
   return (
     <>
       <Grid>
-        <Grid.Col span={4}>
-          <Button>asdf</Button>
-          <Button leftSection={<IconNotes />} onClick={openSheetMusicModal}>
-            View Sheet Music
+        <Grid.Col span={{ base: 12, md: 4 }}>
+          <Button
+            variant="outline"
+            leftSection={<IconNotes />}
+            onClick={openSheetMusicModal}
+          >
+            Preview Score
           </Button>
           <Table>
             <Table.Tbody>
@@ -74,8 +78,10 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
               {voicing.voices.map((voice, index) => {
                 return voice.type === "StandardVoice" ? (
                   <Table.Tr key={index}>
-                    <Table.Td>{voice.part}</Table.Td>
-                    <Table.Td>{range(voice.range)}</Table.Td>
+                    <Table.Td tt="capitalize">{voice.part}</Table.Td>
+                    <Table.Td>
+                      <Text>{range(voice.range)}</Text>
+                    </Table.Td>
                   </Table.Tr>
                 ) : (
                   <Table.Tr key={index}>
@@ -87,7 +93,7 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
             </Table.Tbody>
           </Table>
         </Grid.Col>
-        <Grid.Col span={8}>
+        <Grid.Col span={{ base: 12, md: 8 }}>
           <AspectRatio ratio={16 / 9} maw={800}>
             <iframe
               src={voicing.videoUrl}
@@ -109,7 +115,9 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
         padding={0}
       >
         <Modal.Header p="md" h={`${MODAL_HEADER_HEIGHT}px`}>
-          <Modal.Title>{voicing.toString()}</Modal.Title>
+          <Modal.Title>
+            <Title order={3}>{voicing.toString()}</Title>
+          </Modal.Title>
           <Modal.CloseButton />
         </Modal.Header>
         <Modal.Body>{sheetMusic(voicing.sheetMusicPreview)}</Modal.Body>

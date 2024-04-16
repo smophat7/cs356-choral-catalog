@@ -1,16 +1,22 @@
 import {
+  Anchor,
   AspectRatio,
   Box,
-  Divider,
+  Card,
   Grid,
+  Group,
   Image,
+  List,
+  Stack,
   Table,
   Tabs,
   Text,
   Title,
 } from "@mantine/core";
+import { IconExternalLink } from "@tabler/icons-react";
 
 import { ModeType, Song, Voicing } from "../types";
+import { getPurchaseUrlSourceName } from "../utils/getPurchaseUrlSourceName";
 import VoicingDetails from "./VoicingDetails";
 
 interface Props {
@@ -42,9 +48,8 @@ const SongDetails: React.FC<Props> = ({ song }) => {
   );
 
   const availableVoicings = (voicings: Voicing[]) => (
-    <>
-      <Text>Available in:</Text>
-      <Tabs defaultValue="0">
+    <Card withBorder mt="sm" px="xs" pt={0}>
+      <Tabs defaultValue="0" mt="sm" bg="white">
         <Tabs.List pos="sticky" top={0} bg="white" style={{ zIndex: 1 }}>
           {voicings.map((voicing, index) => (
             <Tabs.Tab key={index} value={index.toString()}>
@@ -53,47 +58,64 @@ const SongDetails: React.FC<Props> = ({ song }) => {
           ))}
         </Tabs.List>
         {voicings.map((voicing, index) => (
-          <Tabs.Panel key={index} value={index.toString()}>
+          <Tabs.Panel key={index} value={index.toString()} p="md">
             <VoicingDetails key={index} voicing={voicing} />
           </Tabs.Panel>
         ))}
       </Tabs>
-    </>
+    </Card>
   );
 
   return (
     <Box pl="md" pr="md" pb="md" mt="md">
+      <Title order={2}>{song.title}</Title>
+      <Text fw={500}>{song.composer}</Text>
       <Grid gutter="lg">
-        <Grid.Col span={2}>
-          <AspectRatio ratio={3 / 4}>
-            <Image src={song.coverImageUrl} alt={`${song.title} cover`} />
-          </AspectRatio>
+        <Grid.Col span={{ base: 4, md: 3, xl: 2 }}>
+          <Stack>
+            <AspectRatio ratio={3 / 4} maw={250}>
+              <Image src={song.coverImageUrl} alt={`${song.title} cover`} />
+            </AspectRatio>
+            <Table withColumnBorders width="100%">
+              <Table.Tbody>
+                {tableRow(
+                  "Duration",
+                  getFriendlySongDuration(song.durationSeconds)
+                )}
+                {tableRow(
+                  "Key/Mode",
+                  `${song.mode.tonic}  ${getFriendlyModeType(song.mode.mode)}`
+                )}
+                {tableRow("Language", song.language)}
+                {tableRow("Period", song.musicalPeriod)}
+              </Table.Tbody>
+            </Table>
+            {song.purchaseUrls.length > 0 && (
+              <>
+                <Stack gap={0}>
+                  <Text>Purchase at:</Text>
+                  <List withPadding>
+                    {song.purchaseUrls.map((url, index) => (
+                      <List.Item key={index}>
+                        <Anchor href={url} target="_blank">
+                          <Group align="center" gap={3}>
+                            {getPurchaseUrlSourceName(url)}
+                            <IconExternalLink />
+                          </Group>
+                        </Anchor>
+                      </List.Item>
+                    ))}
+                  </List>
+                </Stack>
+              </>
+            )}
+          </Stack>
         </Grid.Col>
-        <Grid.Col span={7}>
-          <Title order={2}>{song.title}</Title>
-          <Text fw={500}>{song.composer}</Text>
-          <Text pt="sm">{song.description}</Text>
-        </Grid.Col>
-        <Grid.Col span={2}>
-          <Table withTableBorder width="100%">
-            <Table.Tbody>
-              {tableRow(
-                "Duration",
-                getFriendlySongDuration(song.durationSeconds)
-              )}
-              {tableRow(
-                "Key/Mode",
-                `${song.mode.tonic}  ${getFriendlyModeType(song.mode.mode)}`
-              )}
-              {tableRow("Language", song.language)}
-              {tableRow("Period", song.musicalPeriod)}
-            </Table.Tbody>
-          </Table>
+        <Grid.Col span={{ base: 8, md: 9, xl: 10 }}>
+          <Text>{song.description}</Text>
+          {availableVoicings(song.voicings)}
         </Grid.Col>
       </Grid>
-
-      <Divider my="md" />
-      {availableVoicings(song.voicings)}
     </Box>
   );
 };

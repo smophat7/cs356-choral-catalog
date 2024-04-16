@@ -22,10 +22,12 @@ export interface RawSongData {
   description: string;
   language: string;
   musicalPeriod: MusicalPeriod;
+  accompaniment: string;
   voicings: RawVoicingData[];
   mode: Mode;
   coverImageUrl: string;
   durationSeconds: number;
+  purchaseUrls: string[];
 }
 
 export function parseSongData(songData: RawSongData[]): Song[] {
@@ -59,10 +61,12 @@ export function parseSongData(songData: RawSongData[]): Song[] {
       description: song.description,
       language: song.language,
       musicalPeriod: song.musicalPeriod,
+      accompaniment: song.accompaniment,
       voicings: voicings,
       mode: song.mode,
       coverImageUrl: song.coverImageUrl,
       durationSeconds: song.durationSeconds,
+      purchaseUrls: song.purchaseUrls,
     });
   }
 

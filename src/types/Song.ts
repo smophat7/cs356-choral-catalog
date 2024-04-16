@@ -7,14 +7,15 @@ export interface Song {
   description: string;
   language: string;
   musicalPeriod: MusicalPeriod;
+  accompaniment: string;
   voicings: Voicing[];
   mode: Mode;
   coverImageUrl: string;
   durationSeconds: number;
+  purchaseUrls: string[];
   // ageLevel: string;
   // gradeDifficulty: string;
   // topicSubject: string;
-  // accompaniment: string;
   // price: number;
   // publisherBrand: string;
   // countryOfOrigin: string;

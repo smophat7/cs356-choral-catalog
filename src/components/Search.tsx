@@ -160,7 +160,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
           </Grid.Col>
           <Grid.Col span={4}>
             <Button onClick={open} leftSection={<IconFilter />} fullWidth>
-              All Filters
+              Filters
             </Button>
           </Grid.Col>
         </Grid>
@@ -188,7 +188,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
           </Group>
         )}
       </Stack>
-      <Modal title="All Filters" opened={opened} onClose={close} centered>
+      <Modal title="Filters" opened={opened} onClose={close} centered>
         <Stack>
           <Filter title="Musical Period">
             <MultiSelect
