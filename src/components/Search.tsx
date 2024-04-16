@@ -17,8 +17,10 @@ import {
 import { useDisclosure, useHotkeys } from "@mantine/hooks";
 import { IconFilter, IconSearch, IconX } from "@tabler/icons-react";
 
-import { MusicalPeriod, Song } from "../types";
+import { MusicalPeriod, Note, Song, VocalRangeFilter } from "../types";
+import { isInVoicingCategory, VoicingCategory } from "../types/VoicingFilter";
 import Filter from "./Filter";
+import RangeFilter from "./RangeFilter";
 
 interface Props {
   allSongs: Song[];
@@ -29,6 +31,8 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   const [searchTextFilteredSongs, setSearchTextFilteredSongs] = useState<
     Song[] | null
   >(null);
+  const [voicingCategoryFilter, setVoicingCategoryFilter] =
+    useState<VoicingCategory | null>(null);
   const [searchTextFilter, setSearchTextFilter] = useState<string>("");
   const [languageFilter, setLanguageFilter] = useState<string | null>(null);
   const [musicalPeriodFilter, setMusicalPeriodFilter] =
@@ -38,6 +42,28 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     null
   );
   const [genreFilter, setGenreFilter] = useState<string | null>(null);
+  const [rangeFilter, setRangeFilter] = useState<VocalRangeFilter>({
+    soprano: {
+      enabled: false,
+      low: { note: Note.C, octave: 4 },
+      high: { note: Note.A, octave: 5 },
+    },
+    alto: {
+      enabled: false,
+      low: { note: Note.G, octave: 3 },
+      high: { note: Note.D, octave: 5 },
+    },
+    tenor: {
+      enabled: false,
+      low: { note: Note.C, octave: 3 },
+      high: { note: Note.G, octave: 4 },
+    },
+    bass: {
+      enabled: false,
+      low: { note: Note.E, octave: 2 },
+      high: { note: Note.C, octave: 4 },
+    },
+  });
 
   // Hotkey for search text input focus
   const searchTextInputRef = useRef<HTMLInputElement>(null);
@@ -60,6 +86,10 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     const songsToFilterFrom = searchTextFilteredSongs || allSongs;
     const filteredSongs = songsToFilterFrom.filter(
       (song) =>
+        (voicingCategoryFilter === null ||
+          song.voicings.some((voicing) =>
+            isInVoicingCategory(voicing, voicingCategoryFilter)
+          )) &&
         (languageFilter === null || song.language === languageFilter) &&
         (musicalPeriodFilter === null ||
           song.musicalPeriod === musicalPeriodFilter) &&
@@ -73,6 +103,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     allSongs,
     onFilterChange,
     searchTextFilteredSongs,
+    voicingCategoryFilter,
     languageFilter,
     musicalPeriodFilter,
     composerFilter,
@@ -96,6 +127,13 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     );
     setSearchTextFilteredSongs(filteredSongs);
   }, [allSongs, searchTextFilter]);
+
+  const voicingData: ComboboxItem[] = Object.values(VoicingCategory).map(
+    (voicingCategory) => ({
+      value: voicingCategory,
+      label: voicingCategory,
+    })
+  );
 
   const musicalPeriodData: ComboboxItem[] = Object.values(MusicalPeriod).map(
     (musicalPeriod) => ({
@@ -150,7 +188,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     (genreFilter ? 1 : 0);
 
   return (
-    <Card shadow="sm" p="sm">
+    <Card shadow="md" p="sm" my="md" withBorder>
       <Stack>
         <Grid align="center">
           <Grid.Col span={8}>
@@ -178,43 +216,71 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
             </Filter>
           </Grid.Col>
           <Grid.Col span={4}>
-            <Button onClick={open} leftSection={<IconFilter />} fullWidth>
-              Filters
-            </Button>
+            <Select
+              placeholder="Select voicing..."
+              data={voicingData}
+              value={voicingCategoryFilter}
+              onChange={(value) =>
+                setVoicingCategoryFilter(value as VoicingCategory)
+              }
+              clearable
+              searchable
+            />
           </Grid.Col>
         </Grid>
-        {numFiltersApplied > 0 && (
-          <Group>
-            {languageFilter &&
-              filterPill(languageFilter, () => setLanguageFilter(null))}
-            {musicalPeriodFilter &&
-              filterPill(musicalPeriodFilter, () =>
-                setMusicalPeriodFilter(null)
-              )}
-            {composerFilter &&
-              filterPill(composerFilter, () => setComposerFilter(null))}
-            {accompanimentFilter &&
-              filterPill(accompanimentFilter, () =>
-                setAccompanimentFilter(null)
-              )}
-            {genreFilter && filterPill(genreFilter, () => setGenreFilter(null))}
-            {numFiltersApplied > 1 && (
+
+        <Group>
+          <Button.Group>
+            <Button
+              onClick={open}
+              leftSection={<IconFilter />}
+              title="More Filters"
+              aria-label="More Filters"
+              pl="sm"
+              pr={numFiltersApplied > 0 ? 0 : "sm"}
+            >
+              More Filters
+              {numFiltersApplied > 0 && ` (${numFiltersApplied})`}
+            </Button>
+            {numFiltersApplied > 0 && (
               <Button
-                leftSection={<IconX />}
                 onClick={() => {
                   setLanguageFilter(null);
                   setMusicalPeriodFilter(null);
                   setComposerFilter(null);
+                  setAccompanimentFilter(null);
+                  setGenreFilter(null);
                 }}
-                variant="outline"
+                title="Clear"
+                aria-label="Clear"
+                pr="sm"
+                pl="xs"
               >
-                Clear all
+                <IconX />
               </Button>
             )}
-          </Group>
-        )}
+          </Button.Group>
+          {numFiltersApplied > 0 && (
+            <>
+              {languageFilter &&
+                filterPill(languageFilter, () => setLanguageFilter(null))}
+              {musicalPeriodFilter &&
+                filterPill(musicalPeriodFilter, () =>
+                  setMusicalPeriodFilter(null)
+                )}
+              {composerFilter &&
+                filterPill(composerFilter, () => setComposerFilter(null))}
+              {accompanimentFilter &&
+                filterPill(accompanimentFilter, () =>
+                  setAccompanimentFilter(null)
+                )}
+              {genreFilter &&
+                filterPill(genreFilter, () => setGenreFilter(null))}
+            </>
+          )}
+        </Group>
       </Stack>
-      <Modal title="Filters" opened={opened} onClose={close} centered>
+      <Modal title="More Filters" opened={opened} onClose={close} centered>
         <Stack>
           <Filter title="Musical Period">
             <Select
@@ -266,6 +332,12 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
               onChange={(value) => setGenreFilter(value)}
               clearable
               searchable
+            />
+          </Filter>
+          <Filter title="Voicing and Range">
+            <RangeFilter
+              voicingFilter={rangeFilter}
+              setVoicingFilter={setRangeFilter}
             />
           </Filter>
         </Stack>

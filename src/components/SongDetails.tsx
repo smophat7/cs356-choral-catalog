@@ -63,11 +63,11 @@ const SongDetails: React.FC<Props> = ({ song }) => {
   );
 
   return (
-    <Box pl="md" pr="md" pb="md" mt="md">
+    <Box pl="md" pr="md" pb="md">
       <Title order={2}>{song.title}</Title>
       <Text fw={500}>{song.composer}</Text>
       <Grid gutter="lg">
-        <Grid.Col span={{ base: 4, md: 3, xl: 2 }}>
+        <Grid.Col span={{ base: 5, md: 4, lg: 3 }}>
           <Stack>
             <AspectRatio ratio={3 / 4} maw={250}>
               <Image src={song.coverImageUrl} alt={`${song.title} cover`} />
@@ -110,7 +110,7 @@ const SongDetails: React.FC<Props> = ({ song }) => {
             )}
           </Stack>
         </Grid.Col>
-        <Grid.Col span={{ base: 8, md: 9, xl: 10 }}>
+        <Grid.Col span={{ base: 7, md: 8, lg: 9 }}>
           <Text>{song.description}</Text>
           {availableVoicings(song.voicings)}
         </Grid.Col>

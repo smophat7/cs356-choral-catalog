@@ -73,7 +73,7 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
   return (
     <>
       <Grid>
-        <Grid.Col span={{ base: 12, md: 4 }}>
+        <Grid.Col span={{ base: 12, lg: 4 }}>
           <Button
             variant="outline"
             leftSection={<IconNotes />}
@@ -105,7 +105,7 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
             </Table.Tbody>
           </Table>
         </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 8 }}>
+        <Grid.Col span={{ base: 12, lg: 8 }}>
           <AspectRatio ratio={16 / 9} maw={800}>
             <iframe
               src={voicing.videoUrl}

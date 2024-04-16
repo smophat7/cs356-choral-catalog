@@ -14,3 +14,26 @@ export interface NotePitch {
   note: Note;
   octave: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 }
+
+export interface VocalRangeFilter {
+  soprano: {
+    enabled: boolean;
+    low?: NotePitch;
+    high?: NotePitch;
+  };
+  alto: {
+    enabled: boolean;
+    low?: NotePitch;
+    high?: NotePitch;
+  };
+  tenor: {
+    enabled: boolean;
+    low?: NotePitch;
+    high?: NotePitch;
+  };
+  bass: {
+    enabled: boolean;
+    low?: NotePitch;
+    high?: NotePitch;
+  };
+}
