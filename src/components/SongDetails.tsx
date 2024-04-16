@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import {
   Anchor,
   AspectRatio,
@@ -15,7 +17,11 @@ import {
 } from "@mantine/core";
 import { IconExternalLink } from "@tabler/icons-react";
 
-import { ModeType, Song, Voicing } from "../types";
+import { Song, Voicing } from "../types";
+import {
+  getFriendlyModeType,
+  getFriendlySongDuration,
+} from "../utils/getFriendlyData";
 import { getPurchaseUrlSourceName } from "../utils/getPurchaseUrlSourceName";
 import VoicingDetails from "./VoicingDetails";
 
@@ -24,32 +30,22 @@ interface Props {
 }
 
 const SongDetails: React.FC<Props> = ({ song }) => {
-  const getFriendlyModeType = (mode: ModeType) => {
-    if (mode === "Ionian") return "Major";
-    if (mode === "Aeolian") return "Minor";
-    return mode;
-  };
+  const [activeVoicingTab, setActiveVoicingTab] = useState<string | null>("0");
 
-  const getFriendlySongDuration = (totalSeconds: number) => {
-    const minutes = Math.floor(totalSeconds / 60);
-    const seconds = totalSeconds % 60;
-    if (seconds < 10) {
-      return `${minutes}:0${seconds}`;
-    } else {
-      return `${minutes}:${seconds}`;
-    }
-  };
+  useEffect(() => {
+    setActiveVoicingTab("0");
+  }, [song]);
 
   const tableRow = (label: string, value: string) => (
     <Table.Tr>
-      <Table.Td>{label}</Table.Td>
-      <Table.Td>{value}</Table.Td>
+      <Table.Td pl={0}>{label}</Table.Td>
+      <Table.Td pr={0}>{value}</Table.Td>
     </Table.Tr>
   );
 
   const availableVoicings = (voicings: Voicing[]) => (
     <Card withBorder mt="sm" px="xs" pt={0}>
-      <Tabs defaultValue="0" mt="sm" bg="white">
+      <Tabs value={activeVoicingTab} onChange={setActiveVoicingTab}>
         <Tabs.List pos="sticky" top={0} bg="white" style={{ zIndex: 1 }}>
           {voicings.map((voicing, index) => (
             <Tabs.Tab key={index} value={index.toString()}>

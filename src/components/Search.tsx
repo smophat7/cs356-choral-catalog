@@ -4,13 +4,11 @@ import {
   Button,
   Card,
   CloseButton,
-  ComboboxData,
   ComboboxItem,
   Grid,
   Group,
   Kbd,
   Modal,
-  MultiSelect,
   Pill,
   Select,
   Stack,
@@ -177,7 +175,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
           <Group>
             {languageFilter &&
               filterPill(languageFilter, () => setLanguageFilter(null))}
-            {musicalPeriodFilter.length > 0 &&
+            {musicalPeriodFilter &&
               filterPill(musicalPeriodFilter, () =>
                 setMusicalPeriodFilter(null)
               )}
