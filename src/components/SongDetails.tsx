@@ -74,16 +74,19 @@ const SongDetails: React.FC<Props> = ({ song }) => {
             </AspectRatio>
             <Table withColumnBorders width="100%">
               <Table.Tbody>
+                {tableRow("Accompaniment", song.accompaniment)}
+                {tableRow("Genre", song.genre)}
                 {tableRow(
                   "Duration",
                   getFriendlySongDuration(song.durationSeconds)
                 )}
+
+                {tableRow("Language", song.language)}
+                {tableRow("Period", song.musicalPeriod)}
                 {tableRow(
                   "Key/Mode",
                   `${song.mode.tonic}  ${getFriendlyModeType(song.mode.mode)}`
                 )}
-                {tableRow("Language", song.language)}
-                {tableRow("Period", song.musicalPeriod)}
               </Table.Tbody>
             </Table>
             {song.purchaseUrls.length > 0 && (

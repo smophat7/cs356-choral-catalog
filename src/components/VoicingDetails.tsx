@@ -42,7 +42,7 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
       <Carousel
         slideSize="60%"
         slideGap="xs"
-        controlSize={40}
+        controlSize={70}
         height={`calc(100vh - ${MODAL_HEADER_HEIGHT}px - ${AUDIO_PLAYER_HEIGHT}px)`}
         speed={20}
         classNames={classes}

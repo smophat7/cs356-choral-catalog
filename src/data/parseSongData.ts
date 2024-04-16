@@ -22,6 +22,7 @@ export interface RawSongData {
   description: string;
   language: string;
   musicalPeriod: MusicalPeriod;
+  genre: string;
   accompaniment: string;
   voicings: RawVoicingData[];
   mode: Mode;
@@ -61,6 +62,7 @@ export function parseSongData(songData: RawSongData[]): Song[] {
       description: song.description,
       language: song.language,
       musicalPeriod: song.musicalPeriod,
+      genre: song.genre,
       accompaniment: song.accompaniment,
       voicings: voicings,
       mode: song.mode,
@@ -69,6 +71,8 @@ export function parseSongData(songData: RawSongData[]): Song[] {
       purchaseUrls: song.purchaseUrls,
     });
   }
+
+  songs.sort((a, b) => a.title.localeCompare(b.title));
 
   return songs;
 }

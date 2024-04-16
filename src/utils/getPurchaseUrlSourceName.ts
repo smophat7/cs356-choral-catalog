@@ -9,6 +9,20 @@ export function getPurchaseUrlSourceName(url: string): string {
     return "Sheet Music Plus";
   } else if (url.includes("musicroom")) {
     return "Music Room";
+  } else if (url.includes("lorenz")) {
+    return "Lorenz Corp.";
+  } else if (url.includes("brileemusic")) {
+    return "BriLee Music";
+  } else if (url.includes("stantons")) {
+    return "Stanton's Sheet Music";
+  } else if (url.includes("alfred")) {
+    return "Alfred Music";
+  } else if (url.includes("totalsheetmusic")) {
+    return "Total Sheet Music";
+  } else if (url.includes("sheetmusicauthority")) {
+    return "Sheet Music Authority";
+  } else if (url.includes("carlfischer")) {
+    return "Carl Fischer";
   } else {
     const urlWithoutProtocol = url.replace(/^https?:\/\//, "");
     const urlWithoutWww = urlWithoutProtocol.replace(/^www./, "");

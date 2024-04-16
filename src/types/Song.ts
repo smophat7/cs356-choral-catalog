@@ -7,6 +7,7 @@ export interface Song {
   description: string;
   language: string;
   musicalPeriod: MusicalPeriod;
+  genre: string;
   accompaniment: string;
   voicings: Voicing[];
   mode: Mode;

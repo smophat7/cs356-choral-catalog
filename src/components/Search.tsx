@@ -37,6 +37,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   const [accompanimentFilter, setAccompanimentFilter] = useState<string | null>(
     null
   );
+  const [genreFilter, setGenreFilter] = useState<string | null>(null);
 
   // Hotkey for search text input focus
   const searchTextInputRef = useRef<HTMLInputElement>(null);
@@ -64,7 +65,8 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
           song.musicalPeriod === musicalPeriodFilter) &&
         (composerFilter === null || song.composer === composerFilter) &&
         (accompanimentFilter === null ||
-          song.accompaniment === accompanimentFilter)
+          song.accompaniment === accompanimentFilter) &&
+        (genreFilter === null || song.genre === genreFilter)
     );
     onFilterChange(filteredSongs);
   }, [
@@ -75,6 +77,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     musicalPeriodFilter,
     composerFilter,
     accompanimentFilter,
+    genreFilter,
   ]);
 
   // Apply search text filter
@@ -125,6 +128,14 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
       label: accompaniment,
     }));
 
+  const genreData: ComboboxItem[] = allSongs
+    .map((song) => song.genre)
+    .filter((value, index, self) => self.indexOf(value) === index)
+    .map((genre) => ({
+      value: genre,
+      label: genre,
+    }));
+
   const filterPill = (value: string | string[], onRemove: () => void) => (
     <Pill onRemove={onRemove} withRemoveButton size="lg">
       {value}
@@ -135,7 +146,8 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     (languageFilter ? 1 : 0) +
     (musicalPeriodFilter ? 1 : 0) +
     (composerFilter ? 1 : 0) +
-    (accompanimentFilter ? 1 : 0);
+    (accompanimentFilter ? 1 : 0) +
+    (genreFilter ? 1 : 0);
 
   return (
     <Card shadow="sm" p="sm">
@@ -185,6 +197,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
               filterPill(accompanimentFilter, () =>
                 setAccompanimentFilter(null)
               )}
+            {genreFilter && filterPill(genreFilter, () => setGenreFilter(null))}
             {numFiltersApplied > 1 && (
               <Button
                 leftSection={<IconX />}
@@ -241,6 +254,16 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
               data={accompanimentData}
               value={accompanimentFilter}
               onChange={(value) => setAccompanimentFilter(value)}
+              clearable
+              searchable
+            />
+          </Filter>
+          <Filter title="Genre">
+            <Select
+              placeholder="Select genre..."
+              data={genreData}
+              value={genreFilter}
+              onChange={(value) => setGenreFilter(value)}
               clearable
               searchable
             />
