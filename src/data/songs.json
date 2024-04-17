@@ -246,7 +246,7 @@
     "description": "Building on the original text, this adaptation of the classic spiritual invites the listener to envision and commit to a better, more just world - a world of inclusion, radical kindness, compassion, love, and grace - a world where we have the courage to champion the inherent dignity and value of all people, a world where we will be done with all the ways we deny a person's worth. Spoken word is incorporated throughout, heightening the intensity of the performance, and giving a sense of immediacy to the challenge for the choir and audience to work together for justice, equity, and wholeness.",
     "language": "English",
     "musicalPeriod": "20th/21st Century",
-    "genre": "Traditional Spiritual",
+    "genre": "Spiritual",
     "accompaniment": "piano",
     "difficultyLevel": 4,
     "voicings": [
@@ -480,7 +480,7 @@
     "description": "This traditional Christmas spiritual has a lively gospel feel, conservative ranges, and a syncopated piano accompaniment. Clever voice leading, stacking harmonies, and just the right amount of repetition make this well-paced arrangement easy to learn and a joy to sing. A perfect addition to your Christmas concert or service!",
     "language": "English",
     "musicalPeriod": "20th/21st Century",
-    "genre": "Traditional Spiritual",
+    "genre": "Spiritual",
     "accompaniment": "piano",
     "difficultyLevel": 3,
     "mode": {
@@ -1223,6 +1223,1080 @@
             "https://www.jwpepper.com/scores-png/1/11393373-14.png"
           ]
         }
+      }
+    ]
+  },
+  {
+    "id": "08b7cf5d-3d3f-4483-b1bb-8c1d6a39d6cj",
+    "title": "Here Comes the Sun",
+    "composer": "Matt Podd",
+    "description": "A fresh, artistic take is given to this Beatles hit, now available as an accessible arrangement for younger choirs. A reimagined harmonic structure makes way for text painting and a cinematic feeling that never loses the sunny and hopeful appeal of this iconic tune.",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Pop",
+    "accompaniment": "piano",
+    "mode": {
+      "tonic": "F",
+      "mode": "Major"
+    },
+    "durationSeconds": 220,
+    "difficultyLevel": 3,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/11539753.item",
+      "https://www.halleonard.com/product/1313575/here-comes-the-sun",
+      "https://www.willispianomusic.com/product/viewproduct.action?itemid=1313575&promotion=1270687&"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/11539753.jpg",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "BasicVoice",
+            "part": 1,
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "BasicVoice",
+            "part": 2,
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          }
+        ],
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11539753.mp3",
+        "videoUrl": "https://www.youtube.com/embed/3NzHTdBrL-E",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11539753-3.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-4.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-5.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-6.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-7.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-8.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-9.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-10.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-11.png",
+            "https://www.jwpepper.com/scores-png/1/11539753-12.png"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "08b7cf5d-3d3f-4483-b1bb-8c1d6a39d6cd",
+    "title": "Carrickfergus",
+    "composer": "Patrick Roszell",
+    "description": "\"I wish I was in Carrickfergus, if only for nights in Ballygrand. I would swim over the deepest ocean, for my love to find.\" A beautiful Irish folk song set for treble voices, with highly singable, soaring vocal lines and a lovely contrasting piano part. A perfect piece to teach developing women's choirs about blend, lyrical supported singing and phrasing.",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Folk Song",
+    "accompaniment": "piano",
+    "difficultyLevel": 3,
+    "mode": {
+      "tonic": "C",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 210,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/10810587.item",
+      "https://www.sheetmusicplus.com/en/product/carrickfergus-21169854.html"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/10810587.jpg",
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "Soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "Soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "Alto",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          }
+        ],
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10810587.mp3",
+        "videoUrl": "https://www.youtube.com/embed/6qywpvjZsEc",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10810587-3.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-4.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-5.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-6.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-7.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-8.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-9.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-10.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-11.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-12.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-13.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-14.png",
+            "https://www.jwpepper.com/scores-png/1/10810587-15.png"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "08b7cf5d-3d3f-4483-b1bb-8c1d6a39d6ce",
+    "title": "Sisi Ni Moja",
+    "composer": "Jacob Narverud",
+    "description": "A celebratory, highly rhythmic composition. The Swahili title means \"We are one\" - meaning all human beings have much in common. The energetic djembe sets the tone, the piano adds its own rhythmic design, and the singers dramatically deliver the message.",
+    "language": "Swahili",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Traditional",
+    "accompaniment": "piano w/ opt. djembe",
+    "mode": {
+      "tonic": "F",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 260,
+    "purchaseUrls": ["https://www.jwpepper.com/11319152.item"],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/11319152.jpg",
+    "difficultyLevel": 4,
+    "voicings": [
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "Soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "Alto",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "Tenor",
+            "range": {
+              "low": { "note": "F", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "Bass",
+            "range": {
+              "low": { "note": "F", "octave": 2 },
+              "high": { "note": "D", "octave": 4 }
+            }
+          }
+        ],
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11319152.mp3",
+        "videoUrl": "https://www.youtube.com/embed/peCexlv8eMc",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11319152-3.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-4.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-5.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-6.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-7.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-8.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-9.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-10.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-11.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-12.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-13.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-14.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-15.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-16.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-17.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-18.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-19.png",
+            "https://www.jwpepper.com/scores-png/1/11319152-20.png"
+          ]
+        }
+      },
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "Soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "Alto",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "F", "octave": 2 },
+              "high": { "note": "D", "octave": 4 }
+            }
+          }
+        ],
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10593109.mp3",
+        "videoUrl": "https://www.youtube.com/embed/peCexlv8eMc",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10593109-3.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-4.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-5.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-6.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-7.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-8.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-9.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-10.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-11.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-12.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-13.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-14.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-15.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-16.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-17.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-18.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-19.png",
+            "https://www.jwpepper.com/scores-png/1/10593109-20.png"
+          ]
+        }
+      },
+      {
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "Soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "Alto",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          }
+        ],
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11403761.mp3",
+        "videoUrl": "https://www.youtube.com/embed/peCexlv8eMc",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11403761-3.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-4.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-5.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-6.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-7.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-8.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-9.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-10.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-11.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-12.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-13.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-14.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-15.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-16.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-17.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-18.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-19.png",
+            "https://www.jwpepper.com/scores-png/1/11403761-20.png"
+          ]
+        }
+      },
+      {
+        "voices": [
+          {
+            "type": "BasicVoice",
+            "part": 1,
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          }
+        ],
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11403762.mp3",
+        "videoUrl": "https://www.youtube.com/embed/peCexlv8eMc",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11403762-3.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-4.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-5.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-6.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-7.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-8.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-9.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-10.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-11.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-12.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-13.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-14.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-15.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-16.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-17.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-18.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-19.png",
+            "https://www.jwpepper.com/scores-png/1/11403762-20.png"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "title": "Carrickfergus",
+    "composer": "Russell Robinson",
+    "description": "A song of great longing and beauty, this lyrical Irish folk song includes solo opportunities throughout, and the gorgeous melody is further enhanced by the optional flute obbligato. A gorgeous piece for developing musicality, register changes, and purity of tone with your young treble choirs!",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Folk Song",
+    "accompaniment": "piano w/ opt. flute",
+    "mode": {
+      "tonic": "C",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 282,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/Carrickfergus/10990280.item",
+      "https://www.stantons.com/sheet-music/title/carrickfergus/CM9728/",
+      "https://www.sheetmusicplus.com/en/product/carrickfergus-22367055.html"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/10990280.jpg",
+    "difficultyLevel": 3,
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11396492.mp3",
+        "videoUrl": "https://www.youtube.com/embed/wWsMSsDCSyo",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11396492-2.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-3.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-4.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-5.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-6.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-7.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-8.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-9.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-10.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-11.png",
+            "https://www.jwpepper.com/scores-png/1/11396492-12.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "F", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "B", "octave": 3 },
+              "high": { "note": "D", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "C", "octave": 4 }
+            }
+          }
+        ]
+      },
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10990280.mp3",
+        "videoUrl": "https://www.youtube.com/embed/LauaQSmVMSU",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10990280-3.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-4.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-5.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-6.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-7.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-8.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-9.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-10.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-11.png",
+            "https://www.jwpepper.com/scores-png/1/10990280-12.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "F", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "B", "octave": 3 },
+              "high": { "note": "D", "octave": 4 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Maoz Tzur",
+    "composer": "Matt Podd",
+    "description": "This contemporary pop-influenced arrangement puts a new spin on the traditional Hanukkah song. A gentle piano groove provides a fresh framework for the treasured melody, which is elongated and echoed part to part the second time around. A Hebrew pronunciation guide and translation are included.",
+    "language": "Hebrew",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Holiday",
+    "accompaniment": "piano",
+    "mode": {
+      "tonic": "Eb",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 152,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/Maoz-Tzur/11196388.item",
+      "https://poddbrothers.com/products/maoz-tzur-2"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/11196388.jpg",
+    "difficultyLevel": 3,
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11196388.mp3",
+        "videoUrl": "https://www.youtube.com/embed/pFhPu2osvn8",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11196388-1.png",
+            "https://www.jwpepper.com/scores-png/1/11196388-2.png",
+            "https://www.jwpepper.com/scores-png/1/11196388-3.png",
+            "https://www.jwpepper.com/scores-png/1/11196388-4.png",
+            "https://www.jwpepper.com/scores-png/1/11196388-5.png",
+            "https://www.jwpepper.com/scores-png/1/11196388-6.png",
+            "https://www.jwpepper.com/scores-png/1/11196388-7.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "BasicVoice",
+            "part": 1,
+            "range": {
+              "low": { "note": "E", "octave": 3 },
+              "high": { "note": "G", "octave": 5 }
+            }
+          },
+          {
+            "type": "BasicVoice",
+            "part": 2,
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Take Me Home, Country Roads",
+    "composer": "Roger Emerson",
+    "description": "An enduring and classic ode to West Virginia, this signature song and official state anthem continues to be one of John Denver's best-selling songs. Set here in a super-accessible two-part arrangement, your singers from young to old will enjoy singing this popular song with that classic country style.",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Country",
+    "accompaniment": "piano",
+    "mode": {
+      "tonic": "E",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 180,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/11166230.item",
+      "https://www.halleonard.com/product/1158744/take-me-home-country-roads",
+      "https://www.stantons.com/sheet-music/title/take-me-home-country-roads/00299547/",
+      "https://www.sheetmusicdirect.com/en-US/se/ID_No/425204/Product.aspx"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/11166230.jpg",
+    "difficultyLevel": 2,
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11427463.mp3",
+        "videoUrl": "https://www.youtube.com/embed/2LoTISormSk",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11427463-2.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-3.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-4.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-5.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-6.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-7.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-8.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-9.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-10.png",
+            "https://www.jwpepper.com/scores-png/1/11427463-11.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "BasicVoice",
+            "part": 1,
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          },
+          {
+            "type": "BasicVoice",
+            "part": 2,
+            "range": {
+              "low": { "note": "G", "octave": 2 },
+              "high": { "note": "B", "octave": 4 }
+            }
+          }
+        ]
+      },
+      {
+        "audioUrl": "https://s3.amazonaws.com/halleonard-closerlook/00299547/takehomerdEXC.mp3",
+        "videoUrl": "https://www.youtube.com/embed/xYTQGCz_s8M",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11166230-3.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-4.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-5.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-6.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-7.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-8.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-9.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-10.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-11.png",
+            "https://www.jwpepper.com/scores-png/1/11166230-12.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "F", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "A", "octave": 2 },
+              "high": { "note": "C", "octave": 3 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "O Magnum Mysterium",
+    "composer": "Evan Ramos",
+    "description": "Easy and absolutely beautiful for a cappella voices, this setting of the beloved Latin Christmas text is a succinct and lyrical selection that will create a moment of wonder in your concert or worship service. Simple, elegant, and haunting, this piece is a wonderful choice for developing choirs.",
+    "language": "Latin",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Holiday",
+    "accompaniment": "a cappella",
+    "mode": {
+      "tonic": "Ab",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 109,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/10586916.item",
+      "https://www.carlfischer.com/cm9698-o-magnum-mysterium.html",
+      "https://www.brileemusic.com/bl1002-o-magnum-mysterium.html"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/11370926.jpg",
+    "difficultyLevel": 3,
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11370926.mp3",
+        "videoUrl": "https://www.youtube.com/embed/Fl9N02ju6rg",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11370926-3.png",
+            "https://www.jwpepper.com/scores-png/1/11370926-4.png",
+            "https://www.jwpepper.com/scores-png/1/11370926-5.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "F", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "F", "octave": 2 },
+              "high": { "note": "C", "octave": 4 }
+            }
+          }
+        ]
+      },
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10990309.mp3",
+        "videoUrl": "https://www.youtube.com/embed/lilP_JhgyX0",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10990309-3.png",
+            "https://www.jwpepper.com/scores-png/1/10990309-4.png",
+            "https://www.jwpepper.com/scores-png/1/10990309-5.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "B", "octave": 3 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "F", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "E", "octave": 4 }
+            }
+          }
+        ]
+      },
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10871862.mp3",
+        "videoUrl": "https://www.youtube.com/embed/O03ko2kkxes",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10871862-3.png",
+            "https://www.jwpepper.com/scores-png/1/10871862-4.png",
+            "https://www.jwpepper.com/scores-png/1/10871862-5.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "B", "octave": 3 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "F", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "F", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Oceans and Stars",
+    "composer": "Amy Bernon",
+    "description": "Paralleling the voyages we make through life with those of a river flowing to the sea, this poignant original work creates a thoughtful and meaningful atmosphere using lovely harmonies with a wonderful text of togetherness and support. Suitable for any general concert, it is also a superb choice for graduation.",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Contemporary",
+    "accompaniment": "Piano",
+    "mode": {
+      "tonic": "E",
+      "mode": "Mixolydian"
+    },
+    "durationSeconds": 150,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/sheet-music/10509121.item",
+      "https://www.halleonard.com/product/35030105/oceans-and-stars"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/10509120.jpg",
+    "difficultyLevel": 3,
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10509120.mp3",
+        "videoUrl": "https://www.youtube.com/embed/QaIqC9KiAwk",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10509120-2.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-3.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-4.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-5.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-6.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-7.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-8.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-9.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-10.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-11.png",
+            "https://www.jwpepper.com/scores-png/1/10509120-12.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "G", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "G", "octave": 2 },
+              "high": { "note": "D", "octave": 4 }
+            }
+          }
+        ]
+      },
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10979402.mp3",
+        "videoUrl": "https://www.youtube.com/embed/MbAoKrabsV8",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10979402-2.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-3.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-4.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-5.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-6.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-7.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-8.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-9.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-10.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-11.png",
+            "https://www.jwpepper.com/scores-png/1/10979402-12.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "BasicVoice",
+            "part": 1,
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "BasicVoice",
+            "part": 2,
+            "range": {
+              "low": { "note": "G", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          }
+        ]
+      },
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10680940.mp3",
+        "videoUrl": "https://www.youtube.com/embed/wK2DLtKsq1w",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10680940-1.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-2.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-3.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-4.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-5.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-6.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-7.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-8.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-9.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-10.png",
+            "https://www.jwpepper.com/scores-png/1/10680940-11.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "E", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "G", "octave": 4 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "That’s Christmas to Me",
+    "composer": "Pentatonix",
+    "description": "Pentatonix's original holiday hit became an instant classic full of warmth and nostalgia. This accessible arrangement for young developing choirs utilizes these same accompanying harmonies made famous in the original along with a supportive piano part and easy-to-read rhythms to create a stand-out Christmas selection for your concert.",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Holiday",
+    "accompaniment": "piano",
+    "mode": {
+      "tonic": "C",
+      "mode": "Major"
+    },
+    "durationSeconds": 170,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/10954042.item",
+      "https://www.halleonard.com/product/1158626/thats-christmas-to-me"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/10954042.jpg",
+    "difficultyLevel": 3,
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10954042.mp3",
+        "videoUrl": "https://www.youtube.com/embed/VxJAZEqs6VE",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10954042-3.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-4.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-5.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-6.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-7.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-8.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-9.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-10.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-11.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-12.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-13.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-14.png",
+            "https://www.jwpepper.com/scores-png/1/10954042-15.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "BasicVoice",
+            "part": 1,
+            "range": {
+              "low": { "note": "B", "octave": 3 },
+              "high": { "note": "C", "octave": 4 }
+            }
+          },
+          {
+            "type": "BasicVoice",
+            "part": 2,
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "F", "octave": 4 }
+            }
+          },
+          {
+            "type": "BasicVoice",
+            "part": 3,
+            "range": {
+              "low": { "note": "F", "octave": 3 },
+              "high": { "note": "C", "octave": 4 }
+            }
+          }
+        ]
+      },
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/10954043.mp3",
+        "videoUrl": "https://www.youtube.com/embed/4uJIdKDmCHE",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/10954043-3.png",
+            "https://www.jwpepper.com/scores-png/1/10954043-4.png",
+            "https://www.jwpepper.com/scores-png/1/10954043-5.png",
+            "https://www.jwpepper.com/scores-png/1/10954043-6.png",
+            "https://www.jwpepper.com/scores-png/1/10954043-7.png",
+            "https://www.jwpepper.com/scores-png/1/10954043-8.png",
+            "https://www.jwpepper.com/scores-png/1/10954043-9.png",
+            "https://www.jwpepper.com/scores-png/1/10954043-10.png",
+            "https://www.jwpepper.com/scores-png/1/10954043-11.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "BasicVoice",
+            "part": 1,
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "F", "octave": 4 }
+            }
+          },
+          {
+            "type": "BasicVoice",
+            "part": 2,
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Deep Peace",
+    "composer": "Elaine Hagenberg",
+    "description": "Beautifully capturing the essence of a traditional Gaelic blessing, this original setting evokes the natural tranquility of a 'gentle night' where the 'moon and stars pour their healing light on you.' The flowing piano accompaniment supports the soaring legato vocal lines to create a mature and artistic texture while remaining accessible to choirs in school, church, or community settings. The optional string quartet parts add additional serenity and depth.",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Contemporary",
+    "accompaniment": "piano w/ opt. string quartet",
+    "mode": {
+      "tonic": "B",
+      "mode": "Major"
+    },
+    "durationSeconds": 296,
+    "purchaseUrls": [
+      "https://www.jwpepper.com/11341294.item",
+      "https://giamusic.com/resource/deep-peace-print-geh1009"
+    ],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/quality=100/covers/1/11341294.jpg",
+    "difficultyLevel": 4,
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/11341294.mp3",
+        "videoUrl": "https://www.youtube.com/embed/u0XVTmhZFw8",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/11341294-3.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-4.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-5.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-6.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-7.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-8.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-9.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-10.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-11.png",
+            "https://www.jwpepper.com/scores-png/1/11341294-12.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "F", "octave": 3 },
+              "high": { "note": "D", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "A", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "D", "octave": 3 },
+              "high": { "note": "A", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "G", "octave": 2 },
+              "high": { "note": "D", "octave": 4 }
+            }
+          }
+        ]
       }
     ]
   }

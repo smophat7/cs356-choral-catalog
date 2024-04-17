@@ -272,16 +272,16 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     Object.values(MusicalPeriod)
   );
   const languageData: ComboboxItem[] = generateComboboxData(
-    allSongs.map((song) => song.language)
+    allSongs.map((song) => song.language).sort()
   );
   const composerData: ComboboxItem[] = generateComboboxData(
-    allSongs.map((song) => song.composer)
+    allSongs.map((song) => song.composer).sort()
   );
   const accompanimentData: ComboboxItem[] = generateComboboxData(
-    allSongs.map((song) => song.accompaniment)
+    allSongs.map((song) => song.accompaniment).sort()
   );
   const genreData: ComboboxItem[] = generateComboboxData(
-    allSongs.map((song) => song.genre)
+    allSongs.map((song) => song.genre).sort()
   );
   const difficultyLevelData: ComboboxItem[] = generateComboboxData(
     allSongs.map((song) => song.difficultyLevel.toString()).sort(),

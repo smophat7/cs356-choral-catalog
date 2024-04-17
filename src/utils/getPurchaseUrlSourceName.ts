@@ -23,6 +23,14 @@ export function getPurchaseUrlSourceName(url: string): string {
     return "Sheet Music Authority";
   } else if (url.includes("carlfischer")) {
     return "Carl Fischer";
+  } else if (url.includes("willispianomusic")) {
+    return "Willis Piano Music";
+  } else if (url.includes("halleonard")) {
+    return "Hal Leonard";
+  } else if (url.includes("poddbrothers")) {
+    return "Podd Brothers";
+  } else if (url.includes("sheetmusicdirect")) {
+    return "Sheet Music Direct";
   } else {
     const urlWithoutProtocol = url.replace(/^https?:\/\//, "");
     const urlWithoutWww = urlWithoutProtocol.replace(/^www./, "");

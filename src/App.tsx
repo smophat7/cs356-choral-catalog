@@ -37,6 +37,11 @@ export default function App() {
             withCloseButton={false}
             closeOnEscape={false}
             closeOnClickOutside={false}
+            centered
+            overlayProps={{
+              backgroundOpacity: 0.6,
+              blur: 2.5,
+            }}
           >
             <Welcome close={closeWelcomeModal} />
           </Modal>
