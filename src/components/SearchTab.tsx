@@ -60,7 +60,7 @@ const SearchTab: React.FC<SearchTabProps> = ({
         value={index.toString()}
         rightSection={
           active ? (
-            <Menu>
+            <Menu offset={0} withArrow shadow="md">
               <Menu.Target>
                 <ActionIcon size="xs" variant="outline" color="gray">
                   <IconCaretDownFilled />

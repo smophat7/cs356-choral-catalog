@@ -19,17 +19,21 @@ import {
 import { useDisclosure, useHotkeys } from "@mantine/hooks";
 import { IconFilter, IconPlus, IconSearch, IconX } from "@tabler/icons-react";
 
-import { MusicalPeriod, Song } from "../types";
+import { DifficultyLevel, MusicalPeriod, Song } from "../types";
 import { isInVoicingCategory, VoicingCategory } from "../types/VoicingFilter";
+import { getFullDifficultyLevel } from "../utils/getFriendlyData";
 import Filter from "./Filter";
 import SearchTab from "./SearchTab";
 
-function generateComboboxData(items: string[]): ComboboxItem[] {
+function generateComboboxData(
+  items: string[],
+  label?: (item: string) => string
+): ComboboxItem[] {
   return items
     .filter((value, index, self) => self.indexOf(value) === index)
     .map((item) => ({
       value: item,
-      label: item,
+      label: label ? label(item) : item,
     }));
 }
 
@@ -42,6 +46,7 @@ interface FilterSet {
   composerFilter: string | null;
   accompanimentFilter: string | null;
   genreFilter: string | null;
+  difficultyLevelFilter: DifficultyLevel | null;
 }
 
 const initialFilterSet: FilterSet = {
@@ -53,6 +58,7 @@ const initialFilterSet: FilterSet = {
   composerFilter: null,
   accompanimentFilter: null,
   genreFilter: null,
+  difficultyLevelFilter: null,
 };
 
 interface Props {
@@ -65,6 +71,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   const [activeFilterSetIndex, setActiveFilterSetIndex] = useState(0);
   const activeFilterSet = filterSets[activeFilterSetIndex];
   const [deleteIndex, setDeleteIndex] = useState<number | null>(null);
+  const [clearFilters, setClearFilters] = useState<boolean>(false);
   const [searchTextFilteredSongs, setSearchTextFilteredSongs] = useState<
     Song[] | null
   >(null);
@@ -98,6 +105,9 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   const setGenreFilter = (genreFilter: string | null) => {
     updateActiveFilterSet({ ...activeFilterSet, genreFilter });
   };
+  const setDifficultyLevelFilter = (difficultyLevelFilter: number | null) => {
+    updateActiveFilterSet({ ...activeFilterSet, difficultyLevelFilter });
+  };
 
   const setActiveFilterTab = (tab: string | null) => {
     if (!tab) {
@@ -122,6 +132,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
       composerFilter: null,
       accompanimentFilter: null,
       genreFilter: null,
+      difficultyLevelFilter: null,
     };
     setFilterSets([...filterSets, newFilterSet]);
     setActiveFilterSetIndex(length);
@@ -174,6 +185,29 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     }
   }, [deleteIndex, activeFilterSetIndex]);
 
+  useEffect(() => {
+    if (clearFilters) {
+      const clearedFilterSet: FilterSet = {
+        name: activeFilterSet.name,
+        searchTextFilter: activeFilterSet.searchTextFilter,
+        voicingCategoryFilter: null,
+        languageFilter: null,
+        musicalPeriodFilter: null,
+        composerFilter: null,
+        accompanimentFilter: null,
+        genreFilter: null,
+        difficultyLevelFilter: null,
+      };
+      updateActiveFilterSet(clearedFilterSet);
+      setClearFilters(false);
+    }
+  }, [
+    activeFilterSet.name,
+    activeFilterSet.searchTextFilter,
+    clearFilters,
+    updateActiveFilterSet,
+  ]);
+
   // Apply filters (except search text)
   useEffect(() => {
     const songsToFilterFrom = searchTextFilteredSongs || allSongs;
@@ -183,6 +217,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     const composerFilter = activeFilterSet.composerFilter;
     const accompanimentFilter = activeFilterSet.accompanimentFilter;
     const genreFilter = activeFilterSet.genreFilter;
+    const difficultyLevelFilter = activeFilterSet.difficultyLevelFilter;
 
     const filteredSongs = songsToFilterFrom.filter(
       (song) =>
@@ -196,7 +231,9 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
         (composerFilter === null || song.composer === composerFilter) &&
         (accompanimentFilter === null ||
           song.accompaniment === accompanimentFilter) &&
-        (genreFilter === null || song.genre === genreFilter)
+        (genreFilter === null || song.genre === genreFilter) &&
+        (difficultyLevelFilter === null ||
+          song.difficultyLevel === difficultyLevelFilter)
     );
     onFilterChange(filteredSongs);
   }, [
@@ -209,6 +246,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     activeFilterSet.composerFilter,
     activeFilterSet.accompanimentFilter,
     activeFilterSet.genreFilter,
+    activeFilterSet.difficultyLevelFilter,
   ]);
 
   // Apply search text filter
@@ -245,6 +283,10 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   const genreData: ComboboxItem[] = generateComboboxData(
     allSongs.map((song) => song.genre)
   );
+  const difficultyLevelData: ComboboxItem[] = generateComboboxData(
+    allSongs.map((song) => song.difficultyLevel.toString()).sort(),
+    (item: string) => getFullDifficultyLevel(parseInt(item) as DifficultyLevel)
+  );
 
   const filterPill = (value: string | string[], onRemove: () => void) => (
     <Pill onRemove={onRemove} withRemoveButton size="lg">
@@ -257,7 +299,8 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     (activeFilterSet.musicalPeriodFilter ? 1 : 0) +
     (activeFilterSet.composerFilter ? 1 : 0) +
     (activeFilterSet.accompanimentFilter ? 1 : 0) +
-    (activeFilterSet.genreFilter ? 1 : 0);
+    (activeFilterSet.genreFilter ? 1 : 0) +
+    (activeFilterSet.difficultyLevelFilter ? 1 : 0);
 
   const tabsList = () => {
     return (
@@ -273,11 +316,8 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
             numFilterTabs={filterSets.length}
           />
         ))}
-        <Tabs.Tab
-          value="new"
-          leftSection={<IconPlus style={{ width: rem(15), height: rem(15) }} />}
-        >
-          New
+        <Tabs.Tab value="new" title="New search">
+          <IconPlus style={{ width: rem(15), height: rem(15) }} />
         </Tabs.Tab>
       </>
     );
@@ -353,11 +393,7 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
               {numFiltersApplied > 0 && (
                 <Button
                   onClick={() => {
-                    setLanguageFilter(null);
-                    setMusicalPeriodFilter(null);
-                    setComposerFilter(null);
-                    setAccompanimentFilter(null);
-                    setGenreFilter(null);
+                    setClearFilters(true);
                   }}
                   title="Clear"
                   aria-label="Clear"
@@ -390,19 +426,56 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
                   filterPill(activeFilterSet.genreFilter, () =>
                     setGenreFilter(null)
                   )}
+                {activeFilterSet.difficultyLevelFilter &&
+                  filterPill(
+                    getFullDifficultyLevel(
+                      activeFilterSet.difficultyLevelFilter
+                    ),
+                    () => setDifficultyLevelFilter(null)
+                  )}
               </>
             )}
           </Group>
         </Stack>
         <Modal title="More Filters" opened={opened} onClose={close} centered>
           <Stack>
-            <Filter title="Musical Period">
+            <Filter title="Composer">
               <Select
-                placeholder="Select period..."
-                data={musicalPeriodData}
-                value={activeFilterSet.musicalPeriodFilter}
+                placeholder="Select composer..."
+                data={composerData}
+                value={activeFilterSet.composerFilter}
+                onChange={(value) => setComposerFilter(value)}
+                clearable
+                searchable
+              />
+            </Filter>
+            <Filter title="Genre">
+              <Select
+                placeholder="Select genre..."
+                data={genreData}
+                value={activeFilterSet.genreFilter}
+                onChange={(value) => setGenreFilter(value)}
+                clearable
+                searchable
+              />
+            </Filter>
+            <Filter title="Accompaniment">
+              <Select
+                placeholder="Select accompaniment..."
+                data={accompanimentData}
+                value={activeFilterSet.accompanimentFilter}
+                onChange={(value) => setAccompanimentFilter(value)}
+                clearable
+                searchable
+              />
+            </Filter>
+            <Filter title="Difficulty Level">
+              <Select
+                placeholder="Select difficulty level..."
+                data={difficultyLevelData}
+                value={activeFilterSet.difficultyLevelFilter?.toString()}
                 onChange={(value) =>
-                  setMusicalPeriodFilter(value as MusicalPeriod)
+                  setDifficultyLevelFilter(value ? parseInt(value) : null)
                 }
                 clearable
                 searchable
@@ -418,32 +491,14 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
                 searchable
               />
             </Filter>
-            <Filter title="Composer">
+            <Filter title="Musical Period">
               <Select
-                placeholder="Select composer..."
-                data={composerData}
-                value={activeFilterSet.composerFilter}
-                onChange={(value) => setComposerFilter(value)}
-                clearable
-                searchable
-              />
-            </Filter>
-            <Filter title="Accompaniment">
-              <Select
-                placeholder="Select accompaniment..."
-                data={accompanimentData}
-                value={activeFilterSet.accompanimentFilter}
-                onChange={(value) => setAccompanimentFilter(value)}
-                clearable
-                searchable
-              />
-            </Filter>
-            <Filter title="Genre">
-              <Select
-                placeholder="Select genre..."
-                data={genreData}
-                value={activeFilterSet.genreFilter}
-                onChange={(value) => setGenreFilter(value)}
+                placeholder="Select period..."
+                data={musicalPeriodData}
+                value={activeFilterSet.musicalPeriodFilter}
+                onChange={(value) =>
+                  setMusicalPeriodFilter(value as MusicalPeriod)
+                }
                 clearable
                 searchable
               />

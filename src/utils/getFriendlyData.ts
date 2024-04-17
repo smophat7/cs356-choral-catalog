@@ -1,4 +1,4 @@
-import { ModeType } from "../types";
+import { DifficultyLevel, ModeType } from "../types";
 
 export const getFriendlyModeType = (mode: ModeType) => {
   if (mode === "Ionian") return "Major";
@@ -15,3 +15,7 @@ export const getFriendlySongDuration = (totalSeconds: number) => {
     return `${minutes}:${seconds}`;
   }
 };
+
+export const getFullDifficultyLevel = (
+  difficultyLevel: DifficultyLevel
+): string => `${difficultyLevel}: ${DifficultyLevel[difficultyLevel]}`;

@@ -24,6 +24,7 @@ export interface RawSongData {
   musicalPeriod: MusicalPeriod;
   genre: string;
   accompaniment: string;
+  difficultyLevel: number;
   voicings: RawVoicingData[];
   mode: Mode;
   coverImageUrl: string;
@@ -64,6 +65,7 @@ export function parseSongData(songData: RawSongData[]): Song[] {
       musicalPeriod: song.musicalPeriod,
       genre: song.genre,
       accompaniment: song.accompaniment,
+      difficultyLevel: song.difficultyLevel,
       voicings: voicings,
       mode: song.mode,
       coverImageUrl: song.coverImageUrl,

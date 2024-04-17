@@ -1,4 +1,4 @@
-import { Mode, MusicalPeriod, Voicing } from "./";
+import { DifficultyLevel, Mode, MusicalPeriod, Voicing } from "./";
 
 export interface Song {
   id: string;
@@ -9,13 +9,12 @@ export interface Song {
   musicalPeriod: MusicalPeriod;
   genre: string;
   accompaniment: string;
+  difficultyLevel: DifficultyLevel;
   voicings: Voicing[];
   mode: Mode;
   coverImageUrl: string;
   durationSeconds: number;
   purchaseUrls: string[];
-  // ageLevel: string;
-  // gradeDifficulty: string;
   // topicSubject: string;
   // price: number;
   // publisherBrand: string;

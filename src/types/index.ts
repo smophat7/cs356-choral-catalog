@@ -6,3 +6,4 @@ export * from "./Note";
 export * from "./MusicalPeriod";
 export * from "./Mode";
 export * from "./SheetMusicPreview";
+export * from "./DifficultyLevel";

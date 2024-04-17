@@ -21,6 +21,7 @@ import { Song, Voicing } from "../types";
 import {
   getFriendlyModeType,
   getFriendlySongDuration,
+  getFullDifficultyLevel,
 } from "../utils/getFriendlyData";
 import { getPurchaseUrlSourceName } from "../utils/getPurchaseUrlSourceName";
 import VoicingDetails from "./VoicingDetails";
@@ -87,13 +88,27 @@ const SongDetails: React.FC<Props> = ({ song }) => {
                   "Key/Mode",
                   `${song.mode.tonic}  ${getFriendlyModeType(song.mode.mode)}`
                 )}
+                {tableRow(
+                  "Difficulty",
+                  song.difficultyLevel
+                    ? getFullDifficultyLevel(song.difficultyLevel)
+                    : ""
+                )}
               </Table.Tbody>
             </Table>
             {song.purchaseUrls.length > 0 && (
-              <Menu trigger="click-hover" openDelay={100} closeDelay={400}>
+              <Menu
+                trigger="click-hover"
+                openDelay={100}
+                closeDelay={400}
+                withArrow
+                offset={0}
+                position="right-end"
+                shadow="md"
+              >
                 <Menu.Target>
                   <Button
-                    rightSection={<IconShoppingCart />}
+                    leftSection={<IconShoppingCart />}
                     color="gray"
                     variant="outline"
                     fullWidth

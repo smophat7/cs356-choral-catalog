@@ -12,7 +12,7 @@ const AppHeader: React.FC = () => {
               <Title order={2}>Choral Catalog</Title>
             </Group>
             <Text c="dimmed" size="xs">
-              Find the perfect songs for your choir
+              Find the perfect songs for your choirs
             </Text>
           </Box>
         </Group>
