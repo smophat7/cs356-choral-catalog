@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import {
   Button,
@@ -73,11 +73,14 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   const [searchTextFilteredSongs, setSearchTextFilteredSongs] = useState<
     Song[] | null
   >(null);
-  const updateActiveFilterSet = (newFilterSet: FilterSet) => {
-    const newFilterSets = [...filterSets];
-    newFilterSets[activeFilterSetIndex] = newFilterSet;
-    setFilterSets(newFilterSets);
-  };
+  const updateActiveFilterSet = useCallback(
+    (newFilterSet: FilterSet) => {
+      const newFilterSets = [...filterSets];
+      newFilterSets[activeFilterSetIndex] = newFilterSet;
+      setFilterSets(newFilterSets);
+    },
+    [filterSets, activeFilterSetIndex]
+  );
   const setSearchTextFilter = (searchTextFilter: string) => {
     updateActiveFilterSet({ ...activeFilterSet, searchTextFilter });
   };

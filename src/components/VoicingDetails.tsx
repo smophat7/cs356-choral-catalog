@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import AudioPlayer from "react-h5-audio-player";
 
 import { Carousel } from "@mantine/carousel";
@@ -35,8 +36,18 @@ const VoicingDetails: React.FC<Props> = ({ voicing, purchaseUrls }) => {
     isSheetMusicModalOpen,
     { open: openSheetMusicModal, close: closeSheetMusicModal },
   ] = useDisclosure(false);
+  const [purchaseDropdownWidth, setPurchaseDropdownWidth] = useState("auto");
+  const pruchaseMenuTargetRef = useRef<HTMLDivElement>(null);
   const MODAL_HEADER_HEIGHT = 60;
   const AUDIO_PLAYER_HEIGHT = 80;
+
+  useEffect(() => {
+    if (pruchaseMenuTargetRef.current) {
+      setPurchaseDropdownWidth(
+        `${pruchaseMenuTargetRef.current.offsetWidth}px`
+      );
+    }
+  }, [pruchaseMenuTargetRef]);
 
   const range = (vocalRange: VocalRange) => (
     <>
@@ -97,25 +108,17 @@ const VoicingDetails: React.FC<Props> = ({ voicing, purchaseUrls }) => {
               </Grid.Col>
               <Grid.Col span={{ base: 12, md: 6, lg: 12 }}>
                 {purchaseUrls.length > 0 && (
-                  <Menu
-                    trigger="click-hover"
-                    openDelay={100}
-                    closeDelay={400}
-                    withArrow
-                    offset={0}
-                    shadow="md"
-                  >
-                    <Menu.Target>
+                  <Menu openDelay={100} closeDelay={400} offset={0} shadow="md">
+                    <Menu.Target ref={pruchaseMenuTargetRef}>
                       <Button
                         leftSection={<IconShoppingCart />}
-                        color="gray"
                         variant="outline"
                         fullWidth
                       >
                         Purchase {`(${purchaseUrls.length})`}
                       </Button>
                     </Menu.Target>
-                    <Menu.Dropdown>
+                    <Menu.Dropdown w={purchaseDropdownWidth}>
                       {purchaseUrls.map((url, index) => (
                         <Menu.Item
                           key={index}
