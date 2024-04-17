@@ -3,19 +3,16 @@ import { useEffect, useState } from "react";
 import {
   AspectRatio,
   Box,
-  Button,
   Card,
   Grid,
   Image,
-  Menu,
-  rem,
+  Spoiler,
   Stack,
   Table,
   Tabs,
   Text,
   Title,
 } from "@mantine/core";
-import { IconExternalLink, IconShoppingCart } from "@tabler/icons-react";
 
 import { Song, Voicing } from "../types";
 import {
@@ -23,7 +20,6 @@ import {
   getFriendlySongDuration,
   getFullDifficultyLevel,
 } from "../utils/getFriendlyData";
-import { getPurchaseUrlSourceName } from "../utils/getPurchaseUrlSourceName";
 import VoicingDetails from "./VoicingDetails";
 
 interface Props {
@@ -40,7 +36,9 @@ const SongDetails: React.FC<Props> = ({ song }) => {
   const tableRow = (label: string, value: string) => (
     <Table.Tr>
       <Table.Td pl={0}>{label}</Table.Td>
-      <Table.Td pr={0}>{value}</Table.Td>
+      <Table.Td pr={0} tt="capitalize">
+        {value}
+      </Table.Td>
     </Table.Tr>
   );
 
@@ -56,7 +54,11 @@ const SongDetails: React.FC<Props> = ({ song }) => {
         </Tabs.List>
         {voicings.map((voicing, index) => (
           <Tabs.Panel key={index} value={index.toString()} p="md">
-            <VoicingDetails key={index} voicing={voicing} />
+            <VoicingDetails
+              key={index}
+              voicing={voicing}
+              purchaseUrls={song.purchaseUrls}
+            />
           </Tabs.Panel>
         ))}
       </Tabs>
@@ -73,70 +75,30 @@ const SongDetails: React.FC<Props> = ({ song }) => {
             <AspectRatio ratio={3 / 4} maw={250}>
               <Image src={song.coverImageUrl} alt={`${song.title} cover`} />
             </AspectRatio>
-            <Table withColumnBorders width="100%">
-              <Table.Tbody>
-                {tableRow("Accompaniment", song.accompaniment)}
-                {tableRow("Genre", song.genre)}
-                {tableRow(
-                  "Duration",
-                  getFriendlySongDuration(song.durationSeconds)
-                )}
-
-                {tableRow("Language", song.language)}
-                {tableRow("Period", song.musicalPeriod)}
-                {tableRow(
-                  "Key/Mode",
-                  `${song.mode.tonic}  ${getFriendlyModeType(song.mode.mode)}`
-                )}
-                {tableRow(
-                  "Difficulty",
-                  song.difficultyLevel
-                    ? getFullDifficultyLevel(song.difficultyLevel)
-                    : ""
-                )}
-              </Table.Tbody>
-            </Table>
-            {song.purchaseUrls.length > 0 && (
-              <Menu
-                trigger="click-hover"
-                openDelay={100}
-                closeDelay={400}
-                withArrow
-                offset={0}
-                position="right-end"
-                shadow="md"
-              >
-                <Menu.Target>
-                  <Button
-                    leftSection={<IconShoppingCart />}
-                    color="gray"
-                    variant="outline"
-                    fullWidth
-                    size="compact-md"
-                  >
-                    Purchase {`(${song.purchaseUrls.length})`}
-                  </Button>
-                </Menu.Target>
-                <Menu.Dropdown>
-                  {song.purchaseUrls.map((url, index) => (
-                    <Menu.Item
-                      key={index}
-                      leftSection={
-                        <IconExternalLink
-                          style={{ width: rem(14), height: rem(14) }}
-                        />
-                      }
-                      component="a"
-                      href={url}
-                      target="_blank"
-                      color="blue"
-                    >
-                      {getPurchaseUrlSourceName(url)}
-                    </Menu.Item>
-                  ))}
-                </Menu.Dropdown>
-              </Menu>
-            )}
+            <Spoiler maxHeight={105} showLabel="More details" hideLabel="Less">
+              <Table withColumnBorders width="100%">
+                <Table.Tbody>
+                  {tableRow("Accompaniment", song.accompaniment)}
+                  {tableRow("Genre", song.genre)}{" "}
+                  {tableRow(
+                    "Difficulty",
+                    song.difficultyLevel
+                      ? getFullDifficultyLevel(song.difficultyLevel)
+                      : ""
+                  )}
+                  {tableRow(
+                    "Duration",
+                    getFriendlySongDuration(song.durationSeconds)
+                  )}
+                  {tableRow("Language", song.language)}
+                  {tableRow("Period", song.musicalPeriod)}
+                  {tableRow(
+                    "Key/Mode",
+                    `${song.mode.tonic}  ${getFriendlyModeType(song.mode.mode)}`
+                  )}
+                </Table.Tbody>
+              </Table>
+            </Spoiler>
           </Stack>
         </Grid.Col>
         <Grid.Col span={{ base: 7, md: 8, lg: 9 }}>

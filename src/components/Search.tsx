@@ -19,7 +19,7 @@ import {
 import { useDisclosure, useHotkeys } from "@mantine/hooks";
 import { IconFilter, IconPlus, IconSearch, IconX } from "@tabler/icons-react";
 
-import { DifficultyLevel, MusicalPeriod, Song } from "../types";
+import { DifficultyLevel, Song } from "../types";
 import { isInVoicingCategory, VoicingCategory } from "../types/VoicingFilter";
 import { getFullDifficultyLevel } from "../utils/getFriendlyData";
 import Filter from "./Filter";
@@ -42,7 +42,6 @@ interface FilterSet {
   searchTextFilter: string;
   voicingCategoryFilter: VoicingCategory | null;
   languageFilter: string | null;
-  musicalPeriodFilter: MusicalPeriod | null;
   composerFilter: string | null;
   accompanimentFilter: string | null;
   genreFilter: string | null;
@@ -54,7 +53,6 @@ const initialFilterSet: FilterSet = {
   searchTextFilter: "",
   voicingCategoryFilter: null,
   languageFilter: null,
-  musicalPeriodFilter: null,
   composerFilter: null,
   accompanimentFilter: null,
   genreFilter: null,
@@ -91,11 +89,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
   const setLanguageFilter = (languageFilter: string | null) => {
     updateActiveFilterSet({ ...activeFilterSet, languageFilter });
   };
-  const setMusicalPeriodFilter = (
-    musicalPeriodFilter: MusicalPeriod | null
-  ) => {
-    updateActiveFilterSet({ ...activeFilterSet, musicalPeriodFilter });
-  };
   const setComposerFilter = (composerFilter: string | null) => {
     updateActiveFilterSet({ ...activeFilterSet, composerFilter });
   };
@@ -128,7 +121,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
       searchTextFilter: "",
       voicingCategoryFilter: null,
       languageFilter: null,
-      musicalPeriodFilter: null,
       composerFilter: null,
       accompanimentFilter: null,
       genreFilter: null,
@@ -192,7 +184,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
         searchTextFilter: activeFilterSet.searchTextFilter,
         voicingCategoryFilter: null,
         languageFilter: null,
-        musicalPeriodFilter: null,
         composerFilter: null,
         accompanimentFilter: null,
         genreFilter: null,
@@ -213,7 +204,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     const songsToFilterFrom = searchTextFilteredSongs || allSongs;
     const voicingCategoryFilter = activeFilterSet.voicingCategoryFilter;
     const languageFilter = activeFilterSet.languageFilter;
-    const musicalPeriodFilter = activeFilterSet.musicalPeriodFilter;
     const composerFilter = activeFilterSet.composerFilter;
     const accompanimentFilter = activeFilterSet.accompanimentFilter;
     const genreFilter = activeFilterSet.genreFilter;
@@ -226,8 +216,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
             isInVoicingCategory(voicing, voicingCategoryFilter)
           )) &&
         (languageFilter === null || song.language === languageFilter) &&
-        (musicalPeriodFilter === null ||
-          song.musicalPeriod === musicalPeriodFilter) &&
         (composerFilter === null || song.composer === composerFilter) &&
         (accompanimentFilter === null ||
           song.accompaniment === accompanimentFilter) &&
@@ -242,7 +230,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
     searchTextFilteredSongs,
     activeFilterSet.voicingCategoryFilter,
     activeFilterSet.languageFilter,
-    activeFilterSet.musicalPeriodFilter,
     activeFilterSet.composerFilter,
     activeFilterSet.accompanimentFilter,
     activeFilterSet.genreFilter,
@@ -267,9 +254,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
 
   const voicingData: ComboboxItem[] = generateComboboxData(
     Object.values(VoicingCategory)
-  );
-  const musicalPeriodData: ComboboxItem[] = generateComboboxData(
-    Object.values(MusicalPeriod)
   );
   const languageData: ComboboxItem[] = generateComboboxData(
     allSongs.map((song) => song.language).sort()
@@ -296,7 +280,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
 
   const numFiltersApplied =
     (activeFilterSet.languageFilter ? 1 : 0) +
-    (activeFilterSet.musicalPeriodFilter ? 1 : 0) +
     (activeFilterSet.composerFilter ? 1 : 0) +
     (activeFilterSet.accompanimentFilter ? 1 : 0) +
     (activeFilterSet.genreFilter ? 1 : 0) +
@@ -410,10 +393,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
                   filterPill(activeFilterSet.languageFilter, () =>
                     setLanguageFilter(null)
                   )}
-                {activeFilterSet.musicalPeriodFilter &&
-                  filterPill(activeFilterSet.musicalPeriodFilter, () =>
-                    setMusicalPeriodFilter(null)
-                  )}
                 {activeFilterSet.composerFilter &&
                   filterPill(activeFilterSet.composerFilter, () =>
                     setComposerFilter(null)
@@ -487,18 +466,6 @@ const Search: React.FC<Props> = ({ allSongs, onFilterChange }) => {
                 data={languageData}
                 value={activeFilterSet.languageFilter}
                 onChange={(value) => setLanguageFilter(value)}
-                clearable
-                searchable
-              />
-            </Filter>
-            <Filter title="Musical Period">
-              <Select
-                placeholder="Select period..."
-                data={musicalPeriodData}
-                value={activeFilterSet.musicalPeriodFilter}
-                onChange={(value) =>
-                  setMusicalPeriodFilter(value as MusicalPeriod)
-                }
                 clearable
                 searchable
               />

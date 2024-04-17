@@ -19,10 +19,10 @@ const Welcome: React.FC<Props> = ({ close }) => {
 
         <List withPadding>
           <List.Item>Saved search filters</List.Item>
-          <List.Item>Voicing details and vocal ranges</List.Item>
+          <List.Item>Vocal ranges per voice part</List.Item>
+          <List.Item>Links to purchase at all available sellers</List.Item>
           <List.Item>Sheet music previews</List.Item>
           <List.Item>Audio and video recordings</List.Item>
-          <List.Item>Direct links to purchase</List.Item>
         </List>
       </Box>
       <Center>

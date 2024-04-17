@@ -6,22 +6,31 @@ import {
   Button,
   Grid,
   Image,
+  Menu,
   Modal,
+  rem,
+  Stack,
   Table,
   Text,
   Title,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { IconNotes } from "@tabler/icons-react";
+import {
+  IconExternalLink,
+  IconNotes,
+  IconShoppingCart,
+} from "@tabler/icons-react";
 
 import { SheetMusicPreview, VocalRange, Voicing } from "../types";
+import { getPurchaseUrlSourceName } from "../utils/getPurchaseUrlSourceName";
 import classes from "./VoicingDetails.module.css";
 
 interface Props {
   voicing: Voicing;
+  purchaseUrls: string[];
 }
 
-const VoicingDetails: React.FC<Props> = ({ voicing }) => {
+const VoicingDetails: React.FC<Props> = ({ voicing, purchaseUrls }) => {
   const [
     isSheetMusicModalOpen,
     { open: openSheetMusicModal, close: closeSheetMusicModal },
@@ -74,36 +83,84 @@ const VoicingDetails: React.FC<Props> = ({ voicing }) => {
     <>
       <Grid>
         <Grid.Col span={{ base: 12, lg: 4 }}>
-          <Button
-            variant="outline"
-            leftSection={<IconNotes />}
-            onClick={openSheetMusicModal}
-          >
-            Preview Score
-          </Button>
-          <Table>
-            <Table.Tbody>
-              <Table.Tr>
-                <Table.Th>Part</Table.Th>
-                <Table.Th>Range</Table.Th>
-              </Table.Tr>
-              {voicing.voices.map((voice, index) => {
-                return voice.type === "StandardVoice" ? (
-                  <Table.Tr key={index}>
-                    <Table.Td tt="capitalize">{voice.part}</Table.Td>
-                    <Table.Td>
-                      <Text>{range(voice.range)}</Text>
-                    </Table.Td>
-                  </Table.Tr>
-                ) : (
-                  <Table.Tr key={index}>
-                    <Table.Td>{voice.part.toString()}</Table.Td>
-                    <Table.Td>{range(voice.range)}</Table.Td>
-                  </Table.Tr>
-                );
-              })}
-            </Table.Tbody>
-          </Table>
+          <Stack gap="xs">
+            <Grid>
+              <Grid.Col span={{ base: 12, md: 6, lg: 12 }}>
+                <Button
+                  variant="outline"
+                  leftSection={<IconNotes />}
+                  onClick={openSheetMusicModal}
+                  fullWidth
+                >
+                  Preview Score
+                </Button>
+              </Grid.Col>
+              <Grid.Col span={{ base: 12, md: 6, lg: 12 }}>
+                {purchaseUrls.length > 0 && (
+                  <Menu
+                    trigger="click-hover"
+                    openDelay={100}
+                    closeDelay={400}
+                    withArrow
+                    offset={0}
+                    shadow="md"
+                  >
+                    <Menu.Target>
+                      <Button
+                        leftSection={<IconShoppingCart />}
+                        color="gray"
+                        variant="outline"
+                        fullWidth
+                      >
+                        Purchase {`(${purchaseUrls.length})`}
+                      </Button>
+                    </Menu.Target>
+                    <Menu.Dropdown>
+                      {purchaseUrls.map((url, index) => (
+                        <Menu.Item
+                          key={index}
+                          leftSection={
+                            <IconExternalLink
+                              style={{ width: rem(14), height: rem(14) }}
+                            />
+                          }
+                          component="a"
+                          href={url}
+                          target="_blank"
+                          color="blue"
+                        >
+                          {getPurchaseUrlSourceName(url)}
+                        </Menu.Item>
+                      ))}
+                    </Menu.Dropdown>
+                  </Menu>
+                )}
+              </Grid.Col>
+            </Grid>
+            <Table>
+              <Table.Tbody>
+                <Table.Tr>
+                  <Table.Th>Part</Table.Th>
+                  <Table.Th>Range</Table.Th>
+                </Table.Tr>
+                {voicing.voices.map((voice, index) => {
+                  return voice.type === "StandardVoice" ? (
+                    <Table.Tr key={index}>
+                      <Table.Td tt="capitalize">{voice.part}</Table.Td>
+                      <Table.Td>
+                        <Text>{range(voice.range)}</Text>
+                      </Table.Td>
+                    </Table.Tr>
+                  ) : (
+                    <Table.Tr key={index}>
+                      <Table.Td>{voice.part.toString()}</Table.Td>
+                      <Table.Td>{range(voice.range)}</Table.Td>
+                    </Table.Tr>
+                  );
+                })}
+              </Table.Tbody>
+            </Table>
+          </Stack>
         </Grid.Col>
         <Grid.Col span={{ base: 12, lg: 8 }}>
           <AspectRatio ratio={16 / 9} maw={800}>

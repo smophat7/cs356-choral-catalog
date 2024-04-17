@@ -681,7 +681,7 @@
     "musicalPeriod": "20th/21st Century",
     "genre": "Folk Song",
     "accompaniment": "piano w/ opt. violin",
-    "difficultyLevel": 2,
+    "difficultyLevel": 1,
     "mode": {
       "tonic": "G",
       "mode": "Major"
@@ -2308,7 +2308,7 @@
     "musicalPeriod": "20th/21st Century",
     "genre": "Secular",
     "accompaniment": "a cappella",
-    "difficultyLevel": 5,
+    "difficultyLevel": 6,
     "mode": {
       "tonic": "C",
       "mode": "Ionian"
