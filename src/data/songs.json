@@ -1972,7 +1972,7 @@
     "language": "English",
     "musicalPeriod": "20th/21st Century",
     "genre": "Contemporary",
-    "accompaniment": "Piano",
+    "accompaniment": "piano",
     "mode": {
       "tonic": "E",
       "mode": "Mixolydian"
@@ -2294,6 +2294,196 @@
             "range": {
               "low": { "note": "G", "octave": 2 },
               "high": { "note": "D", "octave": 4 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Water Night",
+    "composer": "Eric Whitacre",
+    "description": "This emotive work for divisi choir, based on a translation of a poem by Octavio Paz, uses an advanced palette of harmonic colors for a shimmering and mysterious effect. It provides a stellar moment in your concert hall with your more accomplished choir.",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Secular",
+    "accompaniment": "a cappella",
+    "difficultyLevel": 5,
+    "mode": {
+      "tonic": "C",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 240,
+    "purchaseUrls": ["https://www.jwpepper.com/Water-Night/3023041.item"],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/3/3023041.jpg",
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/3023041.mp3",
+        "videoUrl": "https://www.youtube.com/embed/V3rRaL-Czxw",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/3023041-3.png",
+            "https://www.jwpepper.com/scores-png/1/3023041-4.png",
+            "https://www.jwpepper.com/scores-png/1/3023041-5.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "G", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "E", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "G", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 4 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Wade in the Watah",
+    "composer": "Ysaye Barnwell",
+    "description": "Traditional Negro Spiritual Ysaye Barnwell is a member of Sweet Honey in the Rock and the unique stylings and vocal techniques of that famed ensemble are evident in this piece. Wade in the Watah borrows from another spiritual, Done Made My Vow, and references the great Harriet Tubman as freedom's guide. The incredible train effects are amazing. The broad range of this piece, which occasionally divides into six-part treble, covers the full spectrum from low D to high B! A most impressive entry for contest, festival, or worship. Wade in the Watah will leave listeners in awe!",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Spiritual",
+    "accompaniment": "a cappella",
+    "difficultyLevel": 5,
+    "mode": {
+      "tonic": "C",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 240,
+    "purchaseUrls": ["https://www.jwpepper.com/Wade-in-the-Watah/3294466.item"],
+    "coverImageUrl": "https://www.jwpepper.com/cdn-cgi/image/width=190%20quality=75/covers/3/3294466.gif",
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/3294466.mp3",
+        "videoUrl": "https://www.youtube.com/embed/9NCHAwSru3c?si=z1kyJgbe-jJsSB6N",
+        "sheetMusicPreview": {
+          "pageUrls": [
+            "https://www.jwpepper.com/scores-png/1/3294466-3.png",
+            "https://www.jwpepper.com/scores-png/1/3294466-4.png",
+            "https://www.jwpepper.com/scores-png/1/3294466-5.png"
+          ]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "G", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "E", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "G", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 4 }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Lift Every Voice and Sing",
+    "composer": "Roland M. Carter",
+    "description": "Lift Every Voice and Sing, often referred to as the 'Black National Anthem' in the U.S., is arranged here by Roland Carter. Accessible vocal writing with a celebratory accompaniment makes this a great selection for honor choirs and festivals.",
+    "language": "English",
+    "musicalPeriod": "20th/21st Century",
+    "genre": "Sacred",
+    "accompaniment": "a cappella",
+    "difficultyLevel": 3,
+    "mode": {
+      "tonic": "C",
+      "mode": "Ionian"
+    },
+    "durationSeconds": 240,
+    "purchaseUrls": [
+      "https://giamusic.com/resource/lift-every-voice-and-sing-print-ww1880"
+    ],
+    "coverImageUrl": "https://s3.amazonaws.com/cdn.giamusic.com/images/product_thumbs/340x340_20092957f6171de3f8678ac878fb7cb47ee548.png",
+    "voicings": [
+      {
+        "audioUrl": "https://d2fizz4npx5v6x.cloudfront.net/audio/placeholder.mp3",
+        "videoUrl": "https://www.youtube.com/embed/L0pUPW1OPzM",
+        "sheetMusicPreview": {
+          "pageUrls": ["https://www.jwpepper.com/scores-png/1/3294466-3.png"]
+        },
+        "voices": [
+          {
+            "type": "StandardVoice",
+            "part": "soprano",
+            "range": {
+              "low": { "note": "C", "octave": 4 },
+              "high": { "note": "G", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "alto",
+            "range": {
+              "low": { "note": "E", "octave": 3 },
+              "high": { "note": "C", "octave": 5 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "tenor",
+            "range": {
+              "low": { "note": "C", "octave": 3 },
+              "high": { "note": "G", "octave": 4 }
+            }
+          },
+          {
+            "type": "StandardVoice",
+            "part": "bass",
+            "range": {
+              "low": { "note": "E", "octave": 2 },
+              "high": { "note": "C", "octave": 4 }
             }
           }
         ]
